@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="d-flex align-items-end stage">
+    <div class="stage--intro-text">
+      <h1>{{ title }}</h1>
+    </div>
   </div>
 </template>
 
@@ -15,18 +17,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.stage {
+  height: 100vh;
+  padding: 20px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
+.stage--intro-text {
+  margin-bottom: 0;
   display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  vertical-align: bottom;
 }
 </style>
