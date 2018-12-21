@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <stage title="China's Social Credit System"/>
+    <Stage title="China's Social Credit System"/>
+    <ChinaMap/>
   </div>
 </template>
 
 <script>
-import stage from "./components/stage.vue";
+import Stage from "./components/Stage.vue";
+import ChinaMap from "./components/ChinaMap.vue";
 
 export default {
   name: "app",
   components: {
-    stage
+    Stage,
+    ChinaMap
   }
 };
 </script>

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Stage",
   props: {
     title: String
   }
@@ -18,8 +18,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .stage {
+  background: #333;
   height: 100vh;
   padding: 20px;
+  color: #ffffff;
 }
 .stage--intro-text {
   margin-bottom: 0;
