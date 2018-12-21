@@ -114,7 +114,7 @@ export default {
   padding: 40px 0;
 }
 #chartdiv {
-  width: 70%;
+  width: 50%;
   height: 500px;
   margin: 0 auto;
 }
