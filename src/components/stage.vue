@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex align-items-end stage">
-    <div class="stage--intro-text">
+    <div class="stage__intro-text">
       <h1>{{ title }}</h1>
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
   padding: 20px;
   color: #ffffff;
 }
-.stage--intro-text {
+.stage__intro-text {
   margin-bottom: 0;
   display: inline-block;
   vertical-align: bottom;

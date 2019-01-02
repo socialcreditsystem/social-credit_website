@@ -7,13 +7,11 @@
 
 <script>
 import Stage from "./components/Stage.vue";
-import ChinaMap from "./components/ChinaMap.vue";
 
 export default {
   name: "app",
   components: {
-    Stage,
-    ChinaMap
+    Stage
   }
 };
 </script>
