@@ -13,15 +13,10 @@
 </template>
 
 <script>
+// Stylesheets
+import "../style/intro/intro.scss";
+
 export default {
   name: "Stage"
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.intro {
-}
-.intro__text-wrapper {
-}
-</style>

@@ -6,6 +6,11 @@
 </template>
 
 <script>
+// Stylesheets
+import "./style/main/fonts.scss";
+import "./style/main/main.scss";
+
+// Vue-Components
 import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
 
@@ -17,26 +22,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-.section {
-  padding: 50px 0;
-}
-.section__heading {
-}
-.section__heading--bold {
-}
-.section__heading--light {
-}
-.section__paragraph {
-}
-.section__image {
-  width: 100%;
-}
-</style>
