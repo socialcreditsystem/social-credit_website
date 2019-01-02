@@ -1,17 +1,16 @@
 <template>
-  <div class="d-flex align-items-end stage">
-    <div class="stage__intro-text">
-      <h1>{{ title }}</h1>
+  <section class="d-flex align-items-end stage">
+    <div class="stage__headline">
+      <h3>Seen through Chinese eyes</h3>
+      <h1>China's<br/>Social Credit System</h1>
+      <h6>A visualization by the students Benedikt Asal, Philipp Danne, Selina Groß and David Wostracky of the Online Media course of studies at Baden-Württemberg Cooperative State University Mosbach.</h6>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "Stage",
-  props: {
-    title: String
-  }
+  name: "Stage"
 };
 </script>
 
@@ -19,11 +18,10 @@ export default {
 <style scoped>
 .stage {
   background: #333;
-  height: 100vh;
-  padding: 20px;
+  min-height: 100vh;
   color: #ffffff;
 }
-.stage__intro-text {
+.stage__headline {
   margin-bottom: 0;
   display: inline-block;
   vertical-align: bottom;
