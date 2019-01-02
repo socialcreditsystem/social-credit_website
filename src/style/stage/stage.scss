@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+
+.stage {
+    background: #333;
+    min-height: 100vh;
+    color: $text-color-light;
+}
+
+.stage__headline {
+    margin-bottom: 60px;
+    display: inline-block;
+    vertical-align: bottom;
+
+    h1 {
+        font-family: $font-paragraph;
+        font-size: 3.25rem;
+    }
+
+    h3 {
+        font-family: $font-heading-bold;
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-family: $font-heading-light;
+        font-size: 1.25rem;
+    }
+}
