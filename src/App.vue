@@ -1,26 +1,24 @@
 <template>
   <div id="app">
-    <Stage title="China's Social Credit System"/>
-    <ChinaMap/>
+    <Stage class="section"/>
+    <Intro class="section"/>
   </div>
 </template>
 
 <script>
+// Stylesheets
+import "./style/main/fonts.scss";
+import "./style/main/main.scss";
+
+// Vue-Components
 import Stage from "./components/Stage.vue";
+import Intro from "./components/Intro.vue";
 
 export default {
   name: "app",
   components: {
-    Stage
+    Stage,
+    Intro
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-</style>
