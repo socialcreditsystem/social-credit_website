@@ -5,36 +5,46 @@ $background-image__gradient--from: rgba(0, 0, 0, 0.6);
 $background-image__gradient--to: rgba(0, 0, 0, 0.6);
 
 .stage {
-    background: #333;
-    min-height: 100vh;
-    color: $text-color-light;
+  background: #333;
+  min-height: 100vh;
+  color: $text-color-light;
 
-    background-image: linear-gradient(to bottom, $background-image__gradient--from, $background-image__gradient--to), $background-image;
-    background-image: -webkit-linear-gradient(top, $background-image__gradient--from, $background-image__gradient--to), $background-image;
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
+    $background-image;
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
+    $background-image;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .stage__headline {
-    margin-bottom: 60px;
-    display: inline-block;
-    vertical-align: bottom;
+  margin-bottom: 60px;
+  display: inline-block;
+  vertical-align: bottom;
 
-    h1 {
-        font-family: $font-paragraph;
-        margin: 15px 0;
-        font-size: 3.25rem;
-    }
+  h1 {
+    font-family: $font-paragraph;
+    margin: 15px 0;
+    font-size: 3.25rem;
+  }
 
-    h3 {
-        font-family: $font-heading-bold;
-        font-size: 1.5rem;
-    }
+  h3 {
+    font-family: $font-heading-bold;
+    font-size: 1.5rem;
+  }
 
-    h6 {
-        font-family: $font-heading-light;
-        font-size: 1.25rem;
-    }
+  h6 {
+    font-family: $font-heading-light;
+    font-size: 1.25rem;
+  }
 }

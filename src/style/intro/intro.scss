@@ -1,16 +1,17 @@
 @import "../utilities/variables";
 
 .intro {
-    color: $text-color-dark;
-    padding-bottom: 120px;
+  color: $text-color-dark;
+  padding-bottom: 120px;
 
-    .section__paragraph {
-        padding: 20px 0;
-    }
+  .section__paragraph {
+    padding: 20px 0;
+  }
 
-    .section__heading {
-        text-align: left;
-    }
+  .section__heading {
+    text-align: left;
+  }
 }
 
-.intro__text-wrapper {}
+.intro__text-wrapper {
+}

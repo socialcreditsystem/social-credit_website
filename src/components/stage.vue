@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex align-items-end stage">
+  <section class="d-flex align-items-end stage" id="stage">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-9 stage__headline">
