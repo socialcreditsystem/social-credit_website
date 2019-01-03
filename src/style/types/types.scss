@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 
-$commercial-scs__background-color: #181818;
+$dark-background-color: #181818;
 $governmental-scs__background-color: #D5433D;
 $commercial-approval-bar-color: #383838;
 $governmental-approval-bar-color: #93302E;
@@ -8,7 +8,7 @@ $governmental-approval-bar-color: #93302E;
 
 .types {
     padding: 60px 0;
-    background: -webkit-linear-gradient(left, $commercial-scs__background-color 0%, $commercial-scs__background-color 50%, $governmental-scs__background-color 50.001%, $governmental-scs__background-color 100%);
+    background: -webkit-linear-gradient(left, $dark-background-color 0%, $dark-background-color 50%, $governmental-scs__background-color 50.001%, $governmental-scs__background-color 100%);
 }
 
 .types__wrapper {
@@ -68,17 +68,18 @@ $governmental-approval-bar-color: #93302E;
 
 .types__element__approval__number {
     text-align: center;
+    font-family: $font-heading-light;
 }
 
 .types__element__usage__visualization {
     width: 90%;
+    margin-left: 10px;
 }
 
 .types__element__usage__visualization-element {
     max-width: 5px;
     height: 40px;
     margin: 5px;
-    background-color: $commercial-approval-bar-color;
 }
 
 .types__element__usage__text {
@@ -88,7 +89,7 @@ $governmental-approval-bar-color: #93302E;
 }
 
 .types__element--commercial-scs {
-    padding-right: 30px;
+    padding-right: 60px;
     padding-left: 0;
 
     .types__element__approval__bar {
@@ -98,6 +99,10 @@ $governmental-approval-bar-color: #93302E;
     .types__element__approval__bar-fill {
         width: 55%;
         background-color: $governmental-scs__background-color;
+    }
+
+    .types__element__usage__visualization-element {
+        background-color: $commercial-approval-bar-color;
     }
 
     .p1,
@@ -113,7 +118,7 @@ $governmental-approval-bar-color: #93302E;
 }
 
 .types__element--governmental-scs {
-    padding-left: 10%;
+    padding-left: 60px;
 
     .types__element__approval__bar {
         background-color: $governmental-approval-bar-color;
@@ -121,7 +126,11 @@ $governmental-approval-bar-color: #93302E;
 
     .types__element__approval__bar-fill {
         width: 64%;
-        background-color: $commercial-scs__background-color;
+        background-color: $dark-background-color;
+    }
+
+    .types__element__usage__visualization-element {
+        background-color: $governmental-approval-bar-color;
     }
 
     .p1,

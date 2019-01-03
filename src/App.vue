@@ -3,6 +3,7 @@
     <Stage class="section"/>
     <Intro class="section"/>
     <Types class="section"/>
+    <Approval class="section"/>
   </div>
 </template>
 
@@ -15,13 +16,15 @@ import "./style/main/main.scss";
 import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
 import Types from "./components/Types.vue";
+import Approval from "./components/Approval.vue";
 
 export default {
   name: "app",
   components: {
     Stage,
     Intro,
-    Types
+    Types,
+    Approval
   }
 };
 </script>
