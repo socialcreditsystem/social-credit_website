@@ -1,0 +1,18 @@
+@import "../utilities/variables";
+
+.source {
+  color: $text-color-dark;
+  padding-bottom: 120px;
+
+  .section__paragraph {
+    padding: 20px 0;
+  }
+
+  .section__heading {
+    text-align: left;
+  }
+  .section__paragraph__link {
+    color: $text-color-dark;
+    text-decoration: underline;
+  }
+}
