@@ -5,7 +5,7 @@
         <div class="col-8 types__intro">
           <h2 class="section__heading">
             <span class="section__heading--light">SCS</span>
-            <span class="section__heading--bold">Types</span>
+            <span class="section__heading--bold">&nbsp;Types</span>
           </h2>
           <p
             class="section__paragraph"

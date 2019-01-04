@@ -5,6 +5,8 @@
     <Intro class="section"/>
     <Source class="section"/>
     <Types class="section"/>
+    <Dissemination class="section"/>
+    <Conclusion class="section"/>
   </div>
 </template>
 
@@ -14,11 +16,13 @@ import "./style/main/fonts.scss";
 import "./style/main/main.scss";
 
 // Vue-Components
-import Stage from "./components/Stage.vue";
 import Navigation from "./components/Navigation.vue";
+import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
 import Source from "./components/Source.vue";
 import Types from "./components/Types.vue";
+import Dissemination from "./components/Dissemination.vue";
+import Conclusion from "./components/Conclusion.vue";
 
 export default {
   name: "app",
@@ -27,7 +31,9 @@ export default {
     Navigation,
     Intro,
     Source,
-    Types
+    Types,
+    Dissemination,
+    Conclusion
   }
 };
 </script>

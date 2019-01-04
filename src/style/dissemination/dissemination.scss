@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+.dissemination {
+  color: $text-color-light;
+  padding-bottom: 120px;
+  padding-top: 160px;
+
+  background-color: #181818;
+
+  .section__paragraph {
+    padding: 20px 0;
+  }
+
+  .section__heading {
+    text-align: center;
+  }
+}
+
+#disseminationChart {
+  width: 100%;
+  height: 550px;
+}
+
+.dissemination__text-wrapper {
+}

@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-12 intro__text-wrapper">
           <h2 class="section__heading">
             <span class="section__heading--bold">Social Credit System</span>
-            <span class="section__heading--light">What?</span>
+            <span class="section__heading--light">&nbsp;What?</span>
           </h2>
           <p
             class="section__paragraph"

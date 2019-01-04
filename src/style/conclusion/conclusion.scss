@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+
+.conclusion {
+  color: $text-color-dark;
+  padding-bottom: 120px;
+
+  .section__paragraph {
+    padding: 20px 0;
+  }
+
+  .section__heading {
+    text-align: center;
+  }
+}
+
+.conclusion__text-wrapper {
+}
