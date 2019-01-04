@@ -10,15 +10,16 @@
             <div class="row justify-content-center">
                 <div class="col-8 approval__controls">
                     <ul class="approval__controls__icon">
+                        <li v-on:click="changeToOverall">Overall</li>
                         <li v-on:click="changeToAge">Age</li>
-                        <li>Gender</li>
-                        <li>Education</li>
-                        <li>Income</li>
-                        <li>Location</li>
-                        <li>Region</li>
+                        <li v-on:click="changeToGender">Gender</li>
+                        <li v-on:click="changeToEducation">Education</li>
+                        <li v-on:click="changeToIncome">Income</li>
+                        <li v-on:click="changeToLocation">Location</li>
+                        <li v-on:click="changeToRegion">Region</li>
                     </ul>
                 </div>
-                <h3 class="approval__controls__heading">Age</h3>
+                <h3 class="approval__controls__heading">Overall</h3>
             </div>
             <div class="row justify-content-end">
                 <div class="col-11 approval__chart" ref="chartdiv"></div>
@@ -62,39 +63,175 @@ let chart;
 export default {
   name: "Approval",
   methods: {
+    changeToOverall: function() {
+      chart.data = [
+        {
+          category: "Overall",
+          stronglyDisapprove: 0.6,
+          somewhatDisapprove: 0.8,
+          neutral: 18.7,
+          somewhatApprove: 31.1,
+          stronglyApprove: 48.9
+        }
+      ];
+    },
     changeToAge: function() {
       chart.data = [
         {
-          category: "15-30 years",
-          stronglyDisapprove: 2,
-          somewhatDisapprove: 2.2,
-          neutral: 15,
-          somewhatApprove: 46,
-          stronglyApprove: 30
+          category: "14-30 years",
+          stronglyDisapprove: 6.8,
+          somewhatDisapprove: 7.2,
+          neutral: 19.9,
+          somewhatApprove: 33.6,
+          stronglyApprove: 45.1
         },
         {
-          category: "51-50 years",
-          stronglyDisapprove: 6.8,
-          somewhatDisapprove: 5.2,
-          neutral: 15,
-          somewhatApprove: 40,
-          stronglyApprove: 30
+          category: "31-50 years",
+          stronglyDisapprove: 0.5,
+          somewhatDisapprove: 0.5,
+          neutral: 17.0,
+          somewhatApprove: 28.5,
+          stronglyApprove: 53.4
         },
         {
           category: "51-65 years",
-          stronglyDisapprove: 6.8,
-          somewhatDisapprove: 5.2,
-          neutral: 15,
-          somewhatApprove: 40,
-          stronglyApprove: 30
+          stronglyDisapprove: 0,
+          somewhatDisapprove: 4.3,
+          neutral: 18.4,
+          somewhatApprove: 21.0,
+          stronglyApprove: 56.4
+        }
+      ];
+    },
+    changeToGender: function() {
+      chart.data = [
+        {
+          category: "female",
+          stronglyDisapprove: 0.6,
+          somewhatDisapprove: 0.9,
+          neutral: 19.5,
+          somewhatApprove: 33.8,
+          stronglyApprove: 45.3
         },
         {
-          category: "41-65 years",
-          stronglyDisapprove: 6.8,
-          somewhatDisapprove: 5.2,
-          neutral: 15,
-          somewhatApprove: 40,
-          stronglyApprove: 30
+          category: "male",
+          stronglyDisapprove: 0.6,
+          somewhatDisapprove: 0.7,
+          neutral: 18.1,
+          somewhatApprove: 29.5,
+          stronglyApprove: 51.2
+        }
+      ];
+    },
+    changeToEducation: function() {
+      chart.data = [
+        {
+          category: "no",
+          stronglyDisapprove: 3.5,
+          somewhatDisapprove: 0,
+          neutral: 57.2,
+          somewhatApprove: 18.2,
+          stronglyApprove: 21.0
+        },
+        {
+          category: "low",
+          stronglyDisapprove: 1.5,
+          somewhatDisapprove: 1.8,
+          neutral: 35.9,
+          somewhatApprove: 25.9,
+          stronglyApprove: 35.0
+        },
+        {
+          category: "medium",
+          stronglyDisapprove: 0.0,
+          somewhatDisapprove: 0.6,
+          neutral: 21.6,
+          somewhatApprove: 36.7,
+          stronglyApprove: 41.2
+        },
+        {
+          category: "high",
+          stronglyDisapprove: 0.4,
+          somewhatDisapprove: 0.6,
+          neutral: 12.7,
+          somewhatApprove: 31.6,
+          stronglyApprove: 54.8
+        }
+      ];
+    },
+    changeToIncome: function() {
+      chart.data = [
+        {
+          category: "less than 1000 RMB",
+          stronglyDisapprove: 0.7,
+          somewhatDisapprove: 0.6,
+          neutral: 29.1,
+          somewhatApprove: 28.8,
+          stronglyApprove: 40.9
+        },
+        {
+          category: "1000 - 4000 RMB",
+          stronglyDisapprove: 0.4,
+          somewhatDisapprove: 0.4,
+          neutral: 11.9,
+          somewhatApprove: 32.1,
+          stronglyApprove: 55.2
+        },
+        {
+          category: "more than 4000 RMB",
+          stronglyDisapprove: 0.0,
+          somewhatDisapprove: 0.9,
+          neutral: 8.8,
+          somewhatApprove: 30.9,
+          stronglyApprove: 59.4
+        }
+      ];
+    },
+    changeToLocation: function() {
+      chart.data = [
+        {
+          category: "rural",
+          stronglyDisapprove: 1.2,
+          somewhatDisapprove: 1.1,
+          neutral: 30.1,
+          somewhatApprove: 31.4,
+          stronglyApprove: 36.2
+        },
+        {
+          category: "city",
+          stronglyDisapprove: 0.5,
+          somewhatDisapprove: 0.7,
+          neutral: 16.4,
+          somewhatApprove: 31.1,
+          stronglyApprove: 51.4
+        }
+      ];
+    },
+    changeToRegion: function() {
+      chart.data = [
+        {
+          category: "west",
+          stronglyDisapprove: 0,
+          somewhatDisapprove: 1.2,
+          neutral: 17.1,
+          somewhatApprove: 34.6,
+          stronglyApprove: 47.1
+        },
+        {
+          category: "central",
+          stronglyDisapprove: 0.7,
+          somewhatDisapprove: 0.8,
+          neutral: 19.9,
+          somewhatApprove: 28.9,
+          stronglyApprove: 49.7
+        },
+        {
+          category: "east",
+          stronglyDisapprove: 0.8,
+          somewhatDisapprove: 0.5,
+          neutral: 18.1,
+          somewhatApprove: 31.4,
+          stronglyApprove: 49.1
         }
       ];
     }
@@ -107,26 +244,26 @@ export default {
       {
         category: "14-30 years",
         stronglyDisapprove: 6.8,
-        somewhatDisapprove: 5.2,
-        neutral: 15,
-        somewhatApprove: 40,
-        stronglyApprove: 30
+        somewhatDisapprove: 7.2,
+        neutral: 19.9,
+        somewhatApprove: 33.6,
+        stronglyApprove: 45.1
       },
       {
         category: "31-50 years",
-        stronglyDisapprove: 6.8,
-        somewhatDisapprove: 5.2,
-        neutral: 15,
-        somewhatApprove: 40,
-        stronglyApprove: 30
+        stronglyDisapprove: 0.5,
+        somewhatDisapprove: 0.5,
+        neutral: 17.0,
+        somewhatApprove: 28.5,
+        stronglyApprove: 53.4
       },
       {
         category: "51-65 years",
-        stronglyDisapprove: 6.8,
-        somewhatDisapprove: 5.2,
-        neutral: 15,
-        somewhatApprove: 40,
-        stronglyApprove: 30
+        stronglyDisapprove: 0,
+        somewhatDisapprove: 4.3,
+        neutral: 18.4,
+        somewhatApprove: 21.0,
+        stronglyApprove: 56.4
       }
     ];
 
