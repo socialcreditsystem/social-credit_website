@@ -8,28 +8,31 @@
               <a class="navigation_button" href="#" data-toggle="collapse" data-target="#Menu">
                 <img class="navigation-button-picture" src="../assets/navigation-plus.svg">
               </a>
-              <ul class="list-unstyled collapse in navigation_list" id="Menu">
-                <li class="active">
-                  <a class="navigation_element" href="#intro">Introduction</a>
-                </li>
-                <li>
-                  <a class="navigation_element" href="#behavior">Behavior</a>
-                </li>
-                <li>
-                  <a class="navigation_element" href="#types">SCS-Types</a>
-                </li>
-                <li>
-                  <a class="navigation_element" href="#usage">Usage</a>
-                </li>
-                <li>
-                  <a class="navigation_element" href="#approval">
-                    <i class="glyphicon glyphicon-user"></i> Approval
-                  </a>
-                </li>
-                <li>
-                  <a class="navigation_element" href="#cityvscountry">City vs. Country</a>
-                </li>
-              </ul>
+              <div class="collapse in" id="Menu">
+                <div class="triangle"></div>
+                <ul class="list-unstyled navigation_list">
+                  <li class="active">
+                    <a class="navigation_element" href="#intro">Introduction</a>
+                  </li>
+                  <li>
+                    <a class="navigation_element" href="#behavior">Behavior</a>
+                  </li>
+                  <li>
+                    <a class="navigation_element" href="#types">SCS-Types</a>
+                  </li>
+                  <li>
+                    <a class="navigation_element" href="#usage">Usage</a>
+                  </li>
+                  <li>
+                    <a class="navigation_element" href="#approval">
+                      <i class="glyphicon glyphicon-user"></i> Approval
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navigation_element" href="#cityvscountry">City vs. Country</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>

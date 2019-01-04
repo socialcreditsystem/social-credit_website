@@ -22,14 +22,14 @@
 
 .navigation_list {
   background-color: white;
-  padding-left: 5px;
+  padding: 10px 10px 10px 10px;
 }
 .navigation_button {
   color: $text-color-dark;
   text-decoration: none;
 }
 .navigation-button-picture {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
 }
 
 .navigation_button:hover {
@@ -40,4 +40,13 @@
 .nav-active {
   margin-left: 10px;
   font-weight: bold;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+
+  border-width: 0 20px 25px 20px;
+  border-color: transparent transparent #ffffff transparent;
+  border-style: solid;
 }
