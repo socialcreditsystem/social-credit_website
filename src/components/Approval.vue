@@ -7,6 +7,19 @@
                     <p class="section__paragraph">Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-8 approval__controls">
+                    <ul class="approval__controls__icon">
+                        <li v-on:click="changeToAge">Age</li>
+                        <li>Gender</li>
+                        <li>Education</li>
+                        <li>Income</li>
+                        <li>Location</li>
+                        <li>Region</li>
+                    </ul>
+                </div>
+                <h3 class="approval__controls__heading">Age</h3>
+            </div>
             <div class="row justify-content-end">
                 <div class="col-11 approval__chart" ref="chartdiv"></div>
             </div>
@@ -44,10 +57,50 @@ am4core.useTheme(am4themes_animated);
 am4core.useTheme(am4themes_approvalTheme);
 // Themes end
 
+let chart;
+
 export default {
   name: "Approval",
+  methods: {
+    changeToAge: function() {
+      chart.data = [
+        {
+          category: "15-30 years",
+          stronglyDisapprove: 2,
+          somewhatDisapprove: 2.2,
+          neutral: 15,
+          somewhatApprove: 46,
+          stronglyApprove: 30
+        },
+        {
+          category: "51-50 years",
+          stronglyDisapprove: 6.8,
+          somewhatDisapprove: 5.2,
+          neutral: 15,
+          somewhatApprove: 40,
+          stronglyApprove: 30
+        },
+        {
+          category: "51-65 years",
+          stronglyDisapprove: 6.8,
+          somewhatDisapprove: 5.2,
+          neutral: 15,
+          somewhatApprove: 40,
+          stronglyApprove: 30
+        },
+        {
+          category: "41-65 years",
+          stronglyDisapprove: 6.8,
+          somewhatDisapprove: 5.2,
+          neutral: 15,
+          somewhatApprove: 40,
+          stronglyApprove: 30
+        }
+      ];
+    }
+  },
   mounted() {
-    let chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
+    chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
     chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
     chart.data = [
