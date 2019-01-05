@@ -81,6 +81,7 @@ export default {
     // Create axes
     let categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "category";
+
     categoryAxis.renderer.grid.template.location = 0;
     categoryAxis.renderer.grid.template.strokeOpacity = 0;
     categoryAxis.renderer.labels.template.horizontalCenter = "right";
@@ -97,9 +98,12 @@ export default {
 
     let valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
     valueAxis.renderer.grid.template.strokeOpacity = 0;
+
     valueAxis.min = 0;
     valueAxis.max = 100;
     valueAxis.strictMinMax = true;
+    // Prozentangaben
+    valueAxis.renderer.labels.template.fill = am4core.color("#ffffff");
 
     chart.colors.list = [
       am4core.color("#283150"),
