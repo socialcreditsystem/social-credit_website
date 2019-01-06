@@ -12,24 +12,27 @@
                 <div class="triangle"></div>
                 <ul class="list-unstyled navigation_list">
                   <li class="active">
-                    <a class="navigation_element" href="#intro">Introduction</a>
+                    <a class="navigation_element intro-nav" href="#intro">Introduction</a>
                   </li>
                   <li>
-                    <a class="navigation_element" href="#behavior">Behavior</a>
+                    <a class="navigation_element behavior-nav" href="#behavior">Behavior</a>
                   </li>
                   <li>
-                    <a class="navigation_element" href="#types">SCS-Types</a>
+                    <a class="navigation_element types-nav" href="#types">SCS-Types</a>
                   </li>
                   <li>
-                    <a class="navigation_element" href="#usage">Usage</a>
+                    <a class="navigation_element usage-nav" href="#usage">Usage</a>
                   </li>
                   <li>
-                    <a class="navigation_element" href="#approval">
+                    <a class="navigation_element approval-nav" href="#approval">
                       <i class="glyphicon glyphicon-user"></i> Approval
                     </a>
                   </li>
                   <li>
-                    <a class="navigation_element" href="#cityvscountry">City vs. Country</a>
+                    <a
+                      class="navigation_element cityvscountry-nav"
+                      href="#cityvscountry"
+                    >City vs. Country</a>
                   </li>
                 </ul>
               </div>
@@ -51,13 +54,13 @@ $(document).ready(function() {
     var scrollPos = $(document).scrollTop();
     if (scrollPos >= top1 && scrollPos < top2) {
       $(".navigation_element").removeClass("nav-active");
-      $("a[href$='#stage']").addClass("nav-active");
+      $(".stage-nav").addClass("nav-active");
     } else if (scrollPos >= top2 && scrollPos < top3) {
       $(".navigation_element").removeClass("nav-active");
-      $("a[href$='#intro']").addClass("nav-active");
+      $(".intro-nav").addClass("nav-active");
     } else if (scrollPos >= top3) {
       $(".navigation_element").removeClass("nav-active");
-      $("a[href$='#types']").addClass("nav-active");
+      $(".types-nav").addClass("nav-active");
     }
   });
 });
