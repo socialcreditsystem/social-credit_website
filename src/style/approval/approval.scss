@@ -12,3 +12,46 @@
     height: 500px;
     font-family: $font-heading-light;
 }
+
+.approval__controls__element {
+    list-style-type: none;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+}
+
+.approval__controls__element__label {
+    color: #ffffff;
+    display: block;
+    font-size: 1rem;
+    font-family: $font-heading-light;
+}
+
+.approval__controls__heading {
+    font-family: $font-heading-bold;
+    color: $text-color-light;
+    text-align: center;
+}
+
+.approval__controls__element__group {
+    display: inline-block;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.approval__controls__element__group:hover {
+    opacity: 0.8;
+}
+
+.approval__controls__element__group--default {
+    opacity: 1;
+}
+
+.approval__controls__element__icons {
+    height: 46px;
+    width: 46px;
+    margin: 5px 25px;
+}

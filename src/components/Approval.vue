@@ -9,18 +9,18 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-8 approval__controls">
-                    <ul class="approval__controls__icon">
-                        <li v-on:click="changeToOverall">Overall</li>
-                        <li v-on:click="changeToAge">Age</li>
-                        <li v-on:click="changeToGender">Gender</li>
-                        <li v-on:click="changeToEducation">Education</li>
-                        <li v-on:click="changeToIncome">Income</li>
-                        <li v-on:click="changeToLocation">Location</li>
-                        <li v-on:click="changeToRegion">Region</li>
+                    <ul class="approval__controls__element">
+                        <!-- <li v-on:click="changeToOverall">Overall</li> -->
+                        <li v-on:click="changeToAge" class="approval__controls__element__group approval__controls__element__group--default"><img class="approval__controls__element__icons approval__controls__element__icons--default" src="../assets/filter-age.svg"/><span class="approval__controls__element__label approval__controls__element__label--default">Age</span></li>
+                        <li v-on:click="changeToGender" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-gender.svg"/><span class="approval__controls__element__label">Gender</span></li>
+                        <li v-on:click="changeToEducation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-education.svg"/><span class="approval__controls__element__label">Education</span></li>
+                        <li v-on:click="changeToIncome" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-income.svg"/><span class="approval__controls__element__label">Income</span></li>
+                        <li v-on:click="changeToLocation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-location.svg"/><span class="approval__controls__element__label">Location</span></li>
+                        <li v-on:click="changeToRegion" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-region.svg"/><span class="approval__controls__element__label">Region</span></li>
                     </ul>
                 </div>
-                <h3 class="approval__controls__heading">Overall</h3>
             </div>
+            <h3 class="approval__controls__heading">Overall</h3>
             <div class="row justify-content-end">
                 <div class="col-11 approval__chart" ref="chartdiv"></div>
             </div>
