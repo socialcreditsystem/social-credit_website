@@ -49,6 +49,7 @@ $(document).ready(function() {
   var top1 = $("#stage").offset().top;
   var top2 = $("#intro").offset().top;
   var top3 = $("#types").offset().top;
+  var top4 = $("#cityvscountry").offset().top;
 
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
@@ -58,9 +59,12 @@ $(document).ready(function() {
     } else if (scrollPos >= top2 && scrollPos < top3) {
       $(".navigation_element").removeClass("nav-active");
       $(".intro-nav").addClass("nav-active");
-    } else if (scrollPos >= top3) {
+    } else if (scrollPos >= top3 && scrollPos < top4) {
       $(".navigation_element").removeClass("nav-active");
       $(".types-nav").addClass("nav-active");
+    } else if (scrollPos >= top4) {
+      $(".navigation_element").removeClass("nav-active");
+      $(".cityvscountry-nav").addClass("nav-active");
     }
   });
 });

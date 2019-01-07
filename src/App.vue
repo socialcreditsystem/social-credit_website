@@ -6,6 +6,8 @@
     <Source class="section"/>
     <Types class="section"/>
     <Dissemination class="section"/>
+    <Country class="section"/>
+    <RualUrban class="section"/>
     <Conclusion class="section"/>
   </div>
 </template>
@@ -22,6 +24,8 @@ import Intro from "./components/Intro.vue";
 import Source from "./components/Source.vue";
 import Types from "./components/Types.vue";
 import Dissemination from "./components/Dissemination.vue";
+import Country from "./components/Country.vue";
+import RualUrban from "./components/RualUrban.vue";
 import Conclusion from "./components/Conclusion.vue";
 
 export default {
@@ -33,6 +37,8 @@ export default {
     Source,
     Types,
     Dissemination,
+    Country,
+    RualUrban,
     Conclusion
   }
 };
