@@ -49,8 +49,9 @@ $(document).ready(function() {
   var top1 = $("#stage").offset().top;
   var top2 = $("#intro").offset().top;
   var top3 = $("#types").offset().top;
-  var top4 = $("#dissemination").offset().top;
-  var top5 = $("#cityvscountry").offset().top;
+  var top4 = $("#behavior").offset().top;
+  var top5 = $("#dissemination").offset().top;
+  var top6 = $("#cityvscountry").offset().top;
 
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
@@ -65,8 +66,11 @@ $(document).ready(function() {
       $(".types-nav").addClass("nav-active");
     } else if (scrollPos >= top4 && scrollPos < top5) {
       $(".navigation_element").removeClass("nav-active");
+      $(".behavior-nav").addClass("nav-active");
+    } else if (scrollPos >= top5 && scrollPos < top6) {
+      $(".navigation_element").removeClass("nav-active");
       $(".usage-nav").addClass("nav-active");
-    } else if (scrollPos >= top5) {
+    } else if (scrollPos >= top6) {
       $(".navigation_element").removeClass("nav-active");
       $(".cityvscountry-nav").addClass("nav-active");
     }

@@ -5,6 +5,7 @@
     <Intro class="section"/>
     <Source class="section"/>
     <Types class="section"/>
+    <Behavior class="section"/>
     <Dissemination class="section"/>
     <Country class="section"/>
     <RualUrban class="section"/>
@@ -23,6 +24,7 @@ import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
 import Source from "./components/Source.vue";
 import Types from "./components/Types.vue";
+import Behavior from "./components/Behavior.vue";
 import Dissemination from "./components/Dissemination.vue";
 import Country from "./components/Country.vue";
 import RualUrban from "./components/RualUrban.vue";
@@ -36,6 +38,7 @@ export default {
     Intro,
     Source,
     Types,
+    Behavior,
     Dissemination,
     Country,
     RualUrban,

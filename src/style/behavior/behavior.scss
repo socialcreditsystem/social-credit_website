@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.behavior {
+  color: $text-color-dark;
+  padding-bottom: 120px;
+  padding-top: 120px;
+
+  .section__paragraph {
+    padding: 20px 0;
+  }
+
+  .section__heading {
+    text-align: center;
+  }
+}
+
+.consequences__element__subheading {
+  font-size: 1.5rem;
+  font-family: $font-heading-bold;
+}
+
+.consequences__element__list {
+  margin-left: -20px;
+  font-family: $font-paragraph;
+  font-size: 1.2rem;
+
+  li {
+    margin-top: 10px;
+  }
+}
