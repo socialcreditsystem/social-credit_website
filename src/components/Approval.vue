@@ -118,13 +118,7 @@ export default {
     },
     changeToGender: function() {
       changeToCategory("changeToGender", "Gender");
-      chart.data[0]["stronglyDisapprove"] = 0.6;
-      chart.data[0]["somewhatDisapprove"] = 0.9;
-      chart.data[0]["neutral"] = 19.5;
-      chart.data[0]["somewhatApprove"] = 33.8;
-      chart.data[0]["stronglyApprove"] = 45.3;
-      chart.invalidateRawData();
-      /* chart.data = [
+      chart.data = [
         {
           category: "female",
           stronglyDisapprove: 0.6,
@@ -141,7 +135,7 @@ export default {
           somewhatApprove: 29.5,
           stronglyApprove: 51.2
         }
-      ]; */
+      ];
     },
     changeToEducation: function() {
       changeToCategory("changeToEducation", "Education");
