@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 
-$background-image: url("https://picsum.photos/3000/2000");
+$background-image: url("../../assets/imgs/photo-1516245266743-983948b98d53.jpg");
 $background-image__gradient--from: rgba(0, 0, 0, 0.6);
 $background-image__gradient--to: rgba(0, 0, 0, 0.6);
 
@@ -9,20 +9,16 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
   color: $text-color-light;
 
-  background-image: linear-gradient(
-      to bottom,
-      $background-image__gradient--from,
-      $background-image__gradient--to
-    ),
+  background-image: linear-gradient(to bottom,
+    $background-image__gradient--from,
+    $background-image__gradient--to),
     $background-image;
-  background-image: -webkit-linear-gradient(
-      top,
-      $background-image__gradient--from,
-      $background-image__gradient--to
-    ),
+  background-image: -webkit-linear-gradient(top,
+    $background-image__gradient--from,
+    $background-image__gradient--to),
     $background-image;
 
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
