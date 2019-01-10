@@ -11,16 +11,16 @@
                 <div class="col-8 approval__controls">
                     <ul class="approval__controls__element">
                         <!-- <li v-on:click="changeToOverall">Overall</li> -->
-                        <li v-on:click="changeToAge" class="approval__controls__element__group approval__controls__element__group--default"><img class="approval__controls__element__icons approval__controls__element__icons--default" src="../assets/filter-age.svg"/><span class="approval__controls__element__label approval__controls__element__label--default">Age</span></li>
-                        <li v-on:click="changeToGender" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-gender.svg"/><span class="approval__controls__element__label">Gender</span></li>
-                        <li v-on:click="changeToEducation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-education.svg"/><span class="approval__controls__element__label">Education</span></li>
-                        <li v-on:click="changeToIncome" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-income.svg"/><span class="approval__controls__element__label">Income</span></li>
-                        <li v-on:click="changeToLocation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-location.svg"/><span class="approval__controls__element__label">Location</span></li>
-                        <li v-on:click="changeToRegion" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-region.svg"/><span class="approval__controls__element__label">Region</span></li>
+                        <li v-on:click="changeToAge" id="changeToAge" class="approval__controls__element__group approval__controls__element__group--default"><img class="approval__controls__element__icons approval__controls__element__icons--default" src="../assets/filter-age.svg"/><span class="approval__controls__element__label approval__controls__element__label--default">Age</span></li>
+                        <li v-on:click="changeToGender" id="changeToGender" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-gender.svg"/><span class="approval__controls__element__label">Gender</span></li>
+                        <li v-on:click="changeToEducation" id="changeToEducation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-education.svg"/><span class="approval__controls__element__label">Education</span></li>
+                        <li v-on:click="changeToIncome" id="changeToIncome" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-income.svg"/><span class="approval__controls__element__label">Income</span></li>
+                        <li v-on:click="changeToLocation" id="changeToLocation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-location.svg"/><span class="approval__controls__element__label">Location</span></li>
+                        <li v-on:click="changeToRegion" id="changeToRegion" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-region.svg"/><span class="approval__controls__element__label">Region</span></li>
                     </ul>
                 </div>
             </div>
-            <h3 class="approval__controls__heading">Overall</h3>
+            <h3 class="approval__controls__heading" id="approvalHeading">Age</h3>
             <div class="row justify-content-end">
                 <div class="col-11 approval__chart" ref="chartdiv"></div>
             </div>
@@ -31,6 +31,18 @@
 <script>
 // Stylesheets
 import "../style/approval/approval.scss";
+
+function changeToCategory(id, categoryName) {
+  var elements = document.querySelectorAll(
+    ".approval__controls__element__group"
+  );
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.opacity = 0.5;
+  }
+
+  document.getElementById(id).style.opacity = 1;
+  document.getElementById("approvalHeading").innerText = categoryName;
+}
 
 /* Imports */
 import * as am4core from "@amcharts/amcharts4/core";
@@ -76,6 +88,7 @@ export default {
       ];
     },
     changeToAge: function() {
+      changeToCategory("changeToAge", "Age");
       chart.data = [
         {
           category: "14-30 years",
@@ -104,6 +117,7 @@ export default {
       ];
     },
     changeToGender: function() {
+      changeToCategory("changeToGender", "Gender");
       chart.data = [
         {
           category: "female",
@@ -124,6 +138,7 @@ export default {
       ];
     },
     changeToEducation: function() {
+      changeToCategory("changeToEducation", "Education");
       chart.data = [
         {
           category: "no",
@@ -160,6 +175,7 @@ export default {
       ];
     },
     changeToIncome: function() {
+      changeToCategory("changeToIncome", "Income");
       chart.data = [
         {
           category: "less than 1000 RMB",
@@ -188,6 +204,7 @@ export default {
       ];
     },
     changeToLocation: function() {
+      changeToCategory("changeToLocation", "Location");
       chart.data = [
         {
           category: "rural",
@@ -208,6 +225,7 @@ export default {
       ];
     },
     changeToRegion: function() {
+      changeToCategory("changeToRegion", "Region");
       chart.data = [
         {
           category: "west",
