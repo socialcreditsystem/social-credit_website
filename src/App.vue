@@ -3,7 +3,10 @@
     <Navigation/>
     <Stage class="section"/>
     <Intro class="section"/>
+<<<<<<< HEAD
     <Source class="additional_information" id="dataSource"/>
+=======
+>>>>>>> fbebb3afe8fd095ddf7abbe9f5e176d292ff211a
     <Types class="section"/>
     <Behavior class="section"/>
     <Dissemination class="section"/>
@@ -23,7 +26,6 @@ import "./style/main/main.scss";
 import Navigation from "./components/Navigation.vue";
 import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
-import Source from "./components/Source.vue";
 import Types from "./components/Types.vue";
 import Approval from "./components/Approval.vue";
 import Behavior from "./components/Behavior.vue";
@@ -39,7 +41,10 @@ export default {
     Navigation,
     Intro,
     Approval,
+<<<<<<< HEAD
     Source,
+=======
+>>>>>>> fbebb3afe8fd095ddf7abbe9f5e176d292ff211a
     Types,
     Behavior,
     Dissemination,
