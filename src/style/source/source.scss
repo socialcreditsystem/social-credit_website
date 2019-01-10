@@ -2,15 +2,33 @@
 
 .source {
   color: $text-color-dark;
-  padding-bottom: 120px;
+  padding: 20px 0 0;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  z-index: 20;
 
-  .section__paragraph {
-    padding: 20px 0;
+  .source__back-button {
+    cursor: pointer;
+    padding: 20px;
+    left: 20px;
+    top: 32px;
+    position: absolute;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+
+    .source__back-button--icon {
+      width: 32px;
+    }
+  }
+
+  .source__back-button:hover {
+    opacity: 0.6;
   }
 
   .section__heading {
-    text-align: left;
+    padding-bottom: 30px;
   }
+
   .section__paragraph__link {
     color: $text-color-dark;
     text-decoration: underline;

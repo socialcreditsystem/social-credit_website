@@ -3,11 +3,11 @@
     <Navigation/>
     <Stage class="section"/>
     <Intro class="section"/>
-    <Source class="section"/>
+    <Source class="additional_information" id="dataSource"/>
     <Types class="section"/>
     <Behavior class="section"/>
-    <Approval class="section"/>
     <Dissemination class="section"/>
+    <Approval class="section"/>
     <Country class="section"/>
     <RualUrban class="section"/>
     <Conclusion class="section"/>
@@ -32,14 +32,13 @@ import Country from "./components/Country.vue";
 import RualUrban from "./components/RualUrban.vue";
 import Conclusion from "./components/Conclusion.vue";
 
-
 export default {
   name: "app",
   components: {
     Stage,
     Navigation,
     Intro,
-    Approval
+    Approval,
     Source,
     Types,
     Behavior,

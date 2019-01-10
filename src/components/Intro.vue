@@ -3,6 +3,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 intro__text-wrapper">
+            <div class="intro__study-info row justify-content-center align-items-center">
+                <img src="../assets/info-circle.svg" alt="Info" class="intro__study-info__icon col-1">
+                <div class="intro__study-info__text col-11">The following visualization is based on a study by Prof. Dr. Genia Kostka. Would you like to learn more about the study? <a v-on:click="showSource" class="intro__study-info__text--link">Learn more</a>.</div>
+            </div>
           <h2 class="section__heading">
             <span class="section__heading--bold">Social Credit System</span>
             <span class="section__heading--light">&nbsp;What?</span>
@@ -26,6 +30,12 @@
 import "../style/intro/intro.scss";
 
 export default {
-  name: "Intro"
+  name: "Intro",
+  methods: {
+    showSource: function() {
+      document.getElementById("dataSource").style.left = 0;
+      document.body.style.overflow = "hidden";
+    }
+  }
 };
 </script>

@@ -1,8 +1,11 @@
 <template>
   <section class="source">
+    <div v-on:click="hideSource" class="source__back-button">
+      <img src="../assets/black-arrow-back.svg" alt="Back" class="source__back-button--icon">
+    </div>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-9 source">
+        <div class="col-8 source">
           <h2 class="section__heading">
             <span class="section__heading--bold">Data</span>
             <span class="section__heading--light">&nbsp;source</span>
@@ -47,6 +50,12 @@
 import "../style/source/source.scss";
 
 export default {
-  name: "Source"
+  name: "Source",
+  methods: {
+    hideSource: function() {
+      document.getElementById("dataSource").style.left = "100%";
+      document.body.style.overflow = "auto";
+    }
+  }
 };
 </script>

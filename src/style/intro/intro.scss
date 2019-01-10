@@ -4,6 +4,28 @@
   color: $text-color-dark;
   padding-bottom: 120px;
 
+  .intro__study-info {
+    margin-top: -20px;
+    padding: 0 0 30px;
+
+    .intro__study-info__icon {
+      height: 16px;
+      width: 16px;
+      padding: 0;
+    }
+
+    .intro__study-info__text {
+      padding: 0;
+      font-family: $font-paragraph;
+      color: $text-color-dark;
+    }
+
+    .intro__study-info__text--link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
   .section__paragraph {
     padding: 20px 0;
   }
@@ -13,5 +35,4 @@
   }
 }
 
-.intro__text-wrapper {
-}
+.intro__text-wrapper {}
