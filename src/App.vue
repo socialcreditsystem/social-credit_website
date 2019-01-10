@@ -3,10 +3,7 @@
     <Navigation/>
     <Stage class="section"/>
     <Intro class="section"/>
-<<<<<<< HEAD
     <Source class="additional_information" id="dataSource"/>
-=======
->>>>>>> fbebb3afe8fd095ddf7abbe9f5e176d292ff211a
     <Types class="section"/>
     <Behavior class="section"/>
     <Dissemination class="section"/>
@@ -41,10 +38,7 @@ export default {
     Navigation,
     Intro,
     Approval,
-<<<<<<< HEAD
     Source,
-=======
->>>>>>> fbebb3afe8fd095ddf7abbe9f5e176d292ff211a
     Types,
     Behavior,
     Dissemination,
