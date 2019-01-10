@@ -25,6 +25,7 @@ import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
 import Types from "./components/Types.vue";
 import Approval from "./components/Approval.vue";
+import Source from "./components/Source.vue";
 import Behavior from "./components/Behavior.vue";
 import Dissemination from "./components/Dissemination.vue";
 import Country from "./components/Country.vue";
