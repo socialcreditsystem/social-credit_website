@@ -1,0 +1,44 @@
+@import "../utilities/variables";
+
+.rualurban {
+  color: $text-color-light;
+  padding-bottom: 120px;
+  padding-top: 0px;
+
+  background-color: #181818;
+
+  .section__paragraph {
+    padding: 20px 0;
+  }
+
+  .section__heading {
+    text-align: center;
+  }
+}
+
+.urban__element__subheading {
+  font-size: 1.5rem;
+  font-family: $font-heading-bold;
+  color: #d5433d;
+}
+
+.rural__element__subheading {
+  font-size: 1.5rem;
+  font-family: $font-heading-bold;
+  color: #445a9a;
+}
+
+.element__subheading {
+  font-size: 1.5rem;
+  font-family: $font-heading-light;
+}
+.rualurban__image-wrapper {
+  padding-top: 50px;
+}
+
+.ruralurban__diagramm {
+  width: 100%;
+  height: 100px;
+  font-family: $font-heading-light;
+  font-size: 1.1rem;
+}

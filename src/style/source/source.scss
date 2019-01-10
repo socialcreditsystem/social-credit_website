@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 
-.intro {
+.source {
   color: $text-color-dark;
   padding-bottom: 120px;
 
@@ -11,7 +11,8 @@
   .section__heading {
     text-align: left;
   }
-}
-
-.intro__text-wrapper {
+  .section__paragraph__link {
+    color: $text-color-dark;
+    text-decoration: underline;
+  }
 }
