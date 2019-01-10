@@ -3,7 +3,6 @@
     <Navigation/>
     <Stage class="section"/>
     <Intro class="section"/>
-    <Source class="section"/>
     <Types class="section"/>
     <Behavior class="section"/>
     <Approval class="section"/>
@@ -23,7 +22,6 @@ import "./style/main/main.scss";
 import Navigation from "./components/Navigation.vue";
 import Stage from "./components/Stage.vue";
 import Intro from "./components/Intro.vue";
-import Source from "./components/Source.vue";
 import Types from "./components/Types.vue";
 import Approval from "./components/Approval.vue";
 import Behavior from "./components/Behavior.vue";
@@ -32,15 +30,13 @@ import Country from "./components/Country.vue";
 import RualUrban from "./components/RualUrban.vue";
 import Conclusion from "./components/Conclusion.vue";
 
-
 export default {
   name: "app",
   components: {
     Stage,
     Navigation,
     Intro,
-    Approval
-    Source,
+    Approval,
     Types,
     Behavior,
     Dissemination,
