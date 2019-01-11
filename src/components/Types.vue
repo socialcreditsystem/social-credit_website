@@ -2,7 +2,7 @@
   <section class="types" id="types">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8 types__intro">
+        <div class="col-10 types__intro">
           <h2 class="section__heading">
             <span class="section__heading--light">SCS</span>
             <span class="section__heading--bold">&nbsp;Types</span>

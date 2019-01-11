@@ -6,7 +6,7 @@ $approval-bar-color: rgba(255, 255, 255, 0.3);
 $approval-bar-fill-color: #ffffff;
 
 .types {
-  margin-top: 90px;
+  margin-top: 125px;
   padding: 0 0 60px;
   background: -webkit-linear-gradient(left,
     $dark-background-color 0%,
@@ -22,8 +22,8 @@ $approval-bar-fill-color: #ffffff;
 .types__intro {
   background-color: #ffffff;
   margin-bottom: 90px;
-  margin-top: -90px;
-  padding: 35px;
+  margin-top: -125px;
+  padding: 50px 140px;
 
   .section__paragraph {
     margin: 0;
