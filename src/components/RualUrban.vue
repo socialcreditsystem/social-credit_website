@@ -180,6 +180,8 @@ export default {
       percentageLabel.label.text = "{valueX}%";
 
       percentageLabel.label.dx = 30;
+      percentageLabel.label.truncate = false;
+      percentageLabel.label.hideOversized = false;
       percentageLabel.label.fill = am4core.color("#fff");
     }
   }
