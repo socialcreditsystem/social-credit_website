@@ -11,6 +11,7 @@
     <Country class="section"/>
     <RualUrban class="section"/>
     <Conclusion class="section"/>
+    <Imprint class="section"/>
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import Dissemination from "./components/Dissemination.vue";
 import Country from "./components/Country.vue";
 import RualUrban from "./components/RualUrban.vue";
 import Conclusion from "./components/Conclusion.vue";
+import Imprint from "./components/Imprint.vue";
 
 export default {
   name: "app",
@@ -45,7 +47,8 @@ export default {
     Dissemination,
     Country,
     RualUrban,
-    Conclusion
+    Conclusion,
+    Imprint
   }
 };
 </script>

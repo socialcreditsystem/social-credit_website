@@ -1,0 +1,24 @@
+@import "../utilities/variables";
+
+.imprint {
+  color: $text-color-dark;
+  padding-bottom: 120px;
+
+  .section__heading {
+    text-align: center;
+  }
+
+  .imprint__title-wrapper {
+    text-align: right;
+
+    h1 {
+      font-family: $font-paragraph;
+      font-size: 3.25rem;
+    }
+
+    h3 {
+      font-family: $font-heading-bold;
+      font-size: 1.5rem;
+    }
+  }
+}
