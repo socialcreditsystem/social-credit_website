@@ -32,7 +32,15 @@
   font-family: $font-paragraph;
   font-size: 1.2rem;
   padding: 20px 20px 20px 20px;
+}
+.paragraph--light {
+  background-color: #ffffff;
+  color: $text-color-dark;
+}
+
+.paragraph--dark {
   background-color: #181818;
+  color: $text-color-light;
 }
 
 .parallaxcountry {
