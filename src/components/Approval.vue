@@ -1,31 +1,83 @@
 <template>
-    <section class="approval">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8 approval__intro">
-                    <h2 class="section__heading"><span class="section__heading--bold">Approval</span><span class="section__heading--light"> of SCS</span></h2>
-                    <p class="section__paragraph">Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-8 approval__controls">
-                    <ul class="approval__controls__element">
-                        <!-- <li v-on:click="changeToOverall">Overall</li> -->
-                        <li v-on:click="changeToAge" id="changeToAge" class="approval__controls__element__group approval__controls__element__group--default"><img class="approval__controls__element__icons approval__controls__element__icons--default" src="../assets/filter-age.svg"/><span class="approval__controls__element__label approval__controls__element__label--default">Age</span></li>
-                        <li v-on:click="changeToGender" id="changeToGender" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-gender.svg"/><span class="approval__controls__element__label">Gender</span></li>
-                        <li v-on:click="changeToEducation" id="changeToEducation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-education.svg"/><span class="approval__controls__element__label">Education</span></li>
-                        <li v-on:click="changeToIncome" id="changeToIncome" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-income.svg"/><span class="approval__controls__element__label">Income</span></li>
-                        <li v-on:click="changeToLocation" id="changeToLocation" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-location.svg"/><span class="approval__controls__element__label">Location</span></li>
-                        <li v-on:click="changeToRegion" id="changeToRegion" class="approval__controls__element__group"><img class="approval__controls__element__icons" src="../assets/filter-region.svg"/><span class="approval__controls__element__label">Region</span></li>
-                    </ul>
-                </div>
-            </div>
-            <h3 class="approval__controls__heading" id="approvalHeading">Age</h3>
-            <div class="row justify-content-end">
-                <div class="col-11 approval__chart" ref="chartdiv"></div>
-            </div>
+  <section class="approval" id="approval">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 approval__intro">
+          <h2 class="section__heading">
+            <span class="section__heading--bold">Approval</span>
+            <span class="section__heading--light">&nbsp;of SCS</span>
+          </h2>
+          <p
+            class="section__paragraph"
+          >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
         </div>
-    </section>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 approval__controls">
+          <ul class="approval__controls__element">
+            <!-- <li v-on:click="changeToOverall">Overall</li> -->
+            <li
+              v-on:click="changeToAge"
+              id="changeToAge"
+              class="approval__controls__element__group approval__controls__element__group--default"
+            >
+              <img
+                class="approval__controls__element__icons approval__controls__element__icons--default"
+                src="../assets/filter-age.svg"
+              >
+              <span
+                class="approval__controls__element__label approval__controls__element__label--default"
+              >Age</span>
+            </li>
+            <li
+              v-on:click="changeToGender"
+              id="changeToGender"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-gender.svg">
+              <span class="approval__controls__element__label">Gender</span>
+            </li>
+            <li
+              v-on:click="changeToEducation"
+              id="changeToEducation"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-education.svg">
+              <span class="approval__controls__element__label">Education</span>
+            </li>
+            <li
+              v-on:click="changeToIncome"
+              id="changeToIncome"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-income.svg">
+              <span class="approval__controls__element__label">Income</span>
+            </li>
+            <li
+              v-on:click="changeToLocation"
+              id="changeToLocation"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-location.svg">
+              <span class="approval__controls__element__label">Location</span>
+            </li>
+            <li
+              v-on:click="changeToRegion"
+              id="changeToRegion"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-region.svg">
+              <span class="approval__controls__element__label">Region</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="approval__controls__heading" id="approvalHeading">Age</h3>
+      <div class="row justify-content-end">
+        <div class="col-11 approval__chart" ref="chartdiv"></div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

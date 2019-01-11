@@ -11,9 +11,8 @@
               <div class="collapse in" id="Menu">
                 <div class="triangle"></div>
                 <ul class="list-unstyled navigation_list">
-                  <li class="active">
-                    <a class="navigation_element intro-nav" href="#intro">Introduction</a>
-                  </li>
+                  <a class="navigation_element intro-nav" href="#intro">Introduction</a>
+
                   <li>
                     <a class="navigation_element types-nav" href="#types">SCS-Types</a>
                   </li>
@@ -24,9 +23,7 @@
                     <a class="navigation_element usage-nav" href="#dissemination">Usage</a>
                   </li>
                   <li>
-                    <a class="navigation_element approval-nav" href="#approval">
-                      <i class="glyphicon glyphicon-user"></i> Approval
-                    </a>
+                    <a class="navigation_element approval-nav" href="#approval">Approval</a>
                   </li>
                   <li>
                     <a
@@ -46,18 +43,18 @@
 
 <script>
 $(document).ready(function() {
-  var top1 = $("#stage").offset().top;
-  var top2 = $("#intro").offset().top;
-  var top3 = $("#types").offset().top;
-  var top4 = $("#behavior").offset().top;
-  var top5 = $("#dissemination").offset().top;
-  var top6 = $("#cityvscountry").offset().top;
+  var top1 = $("#stage").offset().top - 1;
+  var top2 = $("#intro").offset().top - 1;
+  var top3 = $("#types").offset().top - 1;
+  var top4 = $("#behavior").offset().top - 1;
+  var top5 = $("#dissemination").offset().top - 1;
+  var top6 = $("#approval").offset().top - 1;
+  var top7 = $("#cityvscountry").offset().top - 1;
 
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
     if (scrollPos >= top1 && scrollPos < top2) {
       $(".navigation_element").removeClass("nav-active");
-      $(".stage-nav").addClass("nav-active");
     } else if (scrollPos >= top2 && scrollPos < top3) {
       $(".navigation_element").removeClass("nav-active");
       $(".intro-nav").addClass("nav-active");
@@ -70,7 +67,10 @@ $(document).ready(function() {
     } else if (scrollPos >= top5 && scrollPos < top6) {
       $(".navigation_element").removeClass("nav-active");
       $(".usage-nav").addClass("nav-active");
-    } else if (scrollPos >= top6) {
+    } else if (scrollPos >= top6 && scrollPos < top7) {
+      $(".navigation_element").removeClass("nav-active");
+      $(".approval-nav").addClass("nav-active");
+    } else if (scrollPos >= top7) {
       $(".navigation_element").removeClass("nav-active");
       $(".cityvscountry-nav").addClass("nav-active");
     }

@@ -16,7 +16,7 @@
         <div class="col-6 types__element types__element--commercial-scs">
           <h2 class="types__element__heading">
             <span class="section__heading--bold">Commercial</span>
-            <span class="section__heading--light">SCS</span>
+            <span class="section__heading--light">&nbsp;SCS</span>
           </h2>
           <ul class="types__element__list">
             <li>Eight different SCSs by Chinese companies e. g. Sesame Credit (Alibaba Group) and Tencent Credit</li>
@@ -47,7 +47,7 @@
         <div class="col-6 types__element types__element--governmental-scs">
           <h2 class="types__element__heading">
             <span class="section__heading--bold">Governmental</span>
-            <span class="section__heading--light">SCS</span>
+            <span class="section__heading--light">&nbsp;SCS</span>
           </h2>
           <ul class="types__element__list">
             <li>40 different SCSs by the government & it’s municipals and provinces</li>

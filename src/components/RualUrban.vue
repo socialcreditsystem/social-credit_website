@@ -129,6 +129,7 @@ export default {
       // Create chart instance
       let chart = am4core.create("ruralurban" + i, am4charts.XYChart);
 
+      chart.creditsPosition = "bottom-right";
       // Add data
       chart.data = [
         {

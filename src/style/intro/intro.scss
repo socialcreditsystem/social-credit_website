@@ -34,39 +34,3 @@
     text-align: left;
   }
 }
-
-.intro__text-wrapper {}
-
-.modal-full {
-  min-width: 100%;
-  margin: 0;
-}
-
-.modal-full .modal-content {
-  min-height: 100vh;
-}
-
-.section__heading__modal {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.section__paragraph__link {
-  color: $text-color-dark;
-  text-decoration: underline;
-}
-
-.section__paragraph__intro {
-  font-size: 1rem;
-  font-family: $font-paragraph;
-  color: rgba(51, 51, 51, 0.8);
-}
-
-.intro__link {
-  color: rgba(51, 51, 51, 0.8);
-  text-decoration: underline;
-}
-
-.modal-header {
-  border-bottom: none;
-}
