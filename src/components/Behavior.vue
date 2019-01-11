@@ -71,7 +71,6 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12">
-          <br>
           <h4 class="consequences__element__subheading">
             <span class="section__heading--light">Possible</span>
             <span class="section__heading--bold">&nbsp;consequences</span>
