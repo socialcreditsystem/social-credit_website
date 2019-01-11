@@ -28,10 +28,14 @@
   .section__heading {
     padding-bottom: 30px;
   }
-
   .section__paragraph__link {
     color: $text-color-dark;
     text-decoration: underline;
+    cursor: pointer;
+  }
+  .section__paragraph__link:hover {
+    color: $text-color-dark;
+    text-decoration: none;
     cursor: pointer;
   }
 }

@@ -13,12 +13,27 @@
 
     h1 {
       font-family: $font-paragraph;
-      font-size: 3.25rem;
+      font-size: 2.5rem;
     }
 
     h3 {
       font-family: $font-heading-bold;
-      font-size: 1.5rem;
+      font-size: 1.3125rem;
     }
+  }
+  .section__paragraph__link {
+    color: $text-color-dark;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .section__paragraph__link:hover {
+    color: $text-color-dark;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .section__imprint__logo {
+    width: 184px;
+    padding-top: 50px;
   }
 }
