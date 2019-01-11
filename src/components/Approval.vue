@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8 approval__intro">
-          <h2 class="section__heading">
+          <h2 class="section__heading section__heading--color--light">
             <span class="section__heading--bold">Approval</span>
             <span class="section__heading--light">&nbsp;of SCS</span>
           </h2>
           <p
-            class="section__paragraph"
+            class="section__paragraph section__paragraph--color--light"
           >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
         </div>
       </div>

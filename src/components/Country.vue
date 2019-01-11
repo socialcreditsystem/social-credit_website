@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 country__text-wrapper">
-          <h2 class="section__heading">
+          <h2 class="section__heading section__heading--color--light">
             <span class="section__heading--bold">City</span>
             <span class="section__heading--light">&nbsp;vs.</span>
             <span class="section__heading--bold">&nbsp;Countryside</span>
