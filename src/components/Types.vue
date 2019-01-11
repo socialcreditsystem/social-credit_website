@@ -19,7 +19,7 @@
             <span class="section__heading--light">&nbsp;SCS</span>
           </h2>
           <ul class="types__element__list">
-            <li>Eight different SCSs by Chinese companies e. g. Sesame Credit (Alibaba Group) and Tencent Credit</li>
+            <li>Eight different SCSs by Chinese companies e. g. Sesame Credit (Alibaba) and Tencent Credit</li>
             <li>Tense relationship with regulators as they aim to establish a unified national SCS</li>
             <li>Free decision of partcipation</li>
           </ul>
