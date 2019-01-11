@@ -106,11 +106,11 @@ export default {
     valueAxis.renderer.labels.template.fill = am4core.color("#ffffff");
 
     chart.colors.list = [
-      am4core.color("#EF5440").lighten(-0.5),
-      am4core.color("#EF5440").lighten(-0.4),
-      am4core.color("#EF5440").lighten(-0.3),
-      am4core.color("#EF5440").lighten(-0.2),
-      am4core.color("#EF5440").lighten(-0.1),
+      am4core.color("#3B4C81").lighten(0.2),
+      am4core.color("#757575"),
+      am4core.color("#757575").lighten(0.2),
+      am4core.color("#EF5440").lighten(-0.16),
+      am4core.color("#EF5440").lighten(-0.08),
       am4core.color("#EF5440")
     ];
 
