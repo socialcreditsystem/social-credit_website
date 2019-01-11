@@ -8,10 +8,13 @@
           </h2>
           <p
             class="section__paragraph"
-          >The underlying study suggests that citizens perceive SCSs not as an instrument of ‘surveillance’ but instead as an instrument to improve ‘quality of life’ and to close ‘institutional and regulatory gaps’ leading to more honest and law-abiding behavior in society. SCSs are viewed within the context of technological progressand are understood as a means of improving life quality.</p>
+          >Previous studies describe the emerging SCS in China as a state surveillance tool. In contrast, this study shows that Chinese citizens do not share this view. The predominant opinion is positive.</p>
           <p
             class="section__paragraph"
-          >At the same time, respondents are also worried about how theirpersonal information is being used, especiallywhen it comes to commercial SCS operators.</p>
+          >It has also been shown that many more citizens report participating in a commercial SCS than in a governmental SCS.</p>
+          <p
+            class="section__paragraph"
+          >The results of the study are in contrast to previous studies and reports on this topic with the positive view of the Chinese citizens. They perceive SCS as an instrument to improve quality of life and close insitutional and regulatroy gaps leading to more honest and law-abiding behavior in society.</p>
         </div>
       </div>
     </div>

@@ -9,14 +9,37 @@
     padding: 20px 0;
   }
 
+  .section__paragraph__consequences {
+    padding: 20px 0;
+    text-align: center;
+  }
+
   .section__heading {
     text-align: center;
+  }
+
+  .list__element__heading {
+    color: $text-color-light;
+    font-size: 2rem;
+    margin-left: 105px;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  .list__element__heading--black {
+    color: $text-color-light;
+    font-size: 2rem;
+
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 20px;
   }
 }
 
 .consequences__element__subheading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: $font-heading-bold;
+  text-align: center;
 }
 
 .consequences__element__list {
@@ -27,4 +50,12 @@
   li {
     margin-top: 10px;
   }
+}
+
+.consequences__element__list {
+  font-size: 1.5rem;
+}
+.consequences__list__line {
+  border-bottom: 1px dashed $text-color-dark;
+  width: 10px;
 }
