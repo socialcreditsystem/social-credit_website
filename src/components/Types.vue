@@ -20,10 +20,11 @@
           </h2>
           <ul class="types__element__list">
             <li>Eight different SCSs by Chinese companies e. g. Sesame Credit (Alibaba Group) and Tencent Credit</li>
+            <li>Tense relationship with regulators as they aim to establish a unified national SCS</li>
             <li>Free decision of partcipation</li>
           </ul>
           <div class="types__element__approval">
-            <h4 class="types__element__subheading">Approval among participants</h4>
+            <h4 class="types__element__subheading">Approval <span class="types__element__subheading--light">among participants</span></h4>
             <div class="types__element__approval__bar">
               <div class="types__element__approval__bar-fill"></div>
             </div>
@@ -36,11 +37,11 @@
             >4 out of 5 people in China take part in a commercial SCS.</p>
 
             <div class="types__element__usage__visualization row justify-content-center">
-              <div class="col-2 types__element__usage__visualization-element p1"></div>
-              <div class="col-2 types__element__usage__visualization-element p2"></div>
-              <div class="col-2 types__element__usage__visualization-element p3"></div>
-              <div class="col-2 types__element__usage__visualization-element p4"></div>
-              <div class="col-2 types__element__usage__visualization-element p5"></div>
+              <div class="col-2 types__element__usage__visualization-element p1"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p2"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p3"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p4"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p5"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
             </div>
           </div>
         </div>
@@ -55,7 +56,7 @@
             <li>Mandatory participation</li>
           </ul>
           <div class="types__element__approval">
-            <h4 class="types__element__subheading">Approval among participants</h4>
+            <h4 class="types__element__subheading">Approval <span class="types__element__subheading--light">among participants</span></h4>
             <div class="types__element__approval__bar">
               <div class="types__element__approval__bar-fill"></div>
             </div>
@@ -68,11 +69,11 @@
             >Approximately 2 out of 5 people in China take part in a governmental SCS.</p>
 
             <div class="types__element__usage__visualization row justify-content-center">
-              <div class="col-2 types__element__usage__visualization-element p1"></div>
-              <div class="col-2 types__element__usage__visualization-element p2"></div>
-              <div class="col-2 types__element__usage__visualization-element p3"></div>
-              <div class="col-2 types__element__usage__visualization-element p4"></div>
-              <div class="col-2 types__element__usage__visualization-element p5"></div>
+              <div class="col-2 types__element__usage__visualization-element p1"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p2"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p3"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p4"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
+              <div class="col-2 types__element__usage__visualization-element p5"><img src="../assets/person.svg" class="types__element__usage__visualization-element--icon"></div>
             </div>
 
             <p
