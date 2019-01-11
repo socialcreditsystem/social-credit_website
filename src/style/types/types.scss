@@ -52,18 +52,10 @@ $approval-bar-fill-color: #ffffff;
 }
 
 .types__element__list {
-  margin-left: -40px;
-  font-family: $font-paragraph;
-  font-size: 1.2rem;
-  list-style-type: none;
+  color: $text-color-light;
 
   li {
-    padding: 25px;
-    border-top: 1px $approval-bar-color dashed;
-
-    &:first-of-type {
-      border-top: none;
-    }
+    border-color: $approval-bar-color;
   }
 }
 
