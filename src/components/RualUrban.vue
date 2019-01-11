@@ -163,6 +163,10 @@ export default {
       // Remove padding
       chart.paddingBottom = 0;
 
+      // Change credit position
+      chart.logo.align = "right";
+      chart.logo.valign = "bottom";
+
       // Create series
       let series = chart.series.push(new am4charts.ColumnSeries());
       series.dataFields.valueX = "percentage";
