@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 
-$dashed-border-color: rgba(0, 0, 0, 0.3);
+$dashed-border-color: rgba(0, 0, 0, 0.2);
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -51,6 +51,7 @@ html {
 }
 
 .section__dashed-list {
+  text-align: center;
   margin-left: -40px;
   font-family: $font-paragraph;
   font-size: 1.2rem;
@@ -59,7 +60,7 @@ html {
 
   li {
     padding: 25px;
-    border-top: 1px $text-color-dark dashed;
+    border-top: 1px $dashed-border-color dashed;
 
     &:first-of-type {
       border-top: none;

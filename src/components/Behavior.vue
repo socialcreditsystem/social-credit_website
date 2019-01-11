@@ -23,38 +23,60 @@
           <img src="../assets/arrow-blacklist.svg">
         </div>
       </div>
-
+      <div class="row justify-content-center"></div>
       <div class="row justify-content-center" style="text-align: right">
-        <div class="col-6">
+        <div class="col-2" style="text-align: right">
+          <p class="section__paragraph">
+            <b>trustworthy</b> behavior
+          </p>
+        </div>
+
+        <div class="col-3" style="text-align:right">
+          <h2 class="list__element__heading">
+            <span class="section__heading--bold">Red</span>
+            <span class="section__heading--light">list</span>
+          </h2>
+
           <img src="../assets/redlist.svg">
         </div>
 
-        <div class="col-6" style="text-align:left">
+        <div class="col-3" style="text-align:left">
+          <h2 class="list__element__heading--black">
+            <span class="section__heading--bold">Black</span>
+            <span class="section__heading--light">list</span>
+          </h2>
           <img src="../assets/blacklist.svg">
+        </div>
+        <div class="col-2" style="text-align: left">
+          <p class="section__paragraph">
+            <b>untrustworthy</b> or
+            <b>illegal</b> behavior
+          </p>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph" style="text-align: right">
-            By doing something on the redlist your
-            <b>score gets higher.</b>
-          </p>
+          <p
+            class="section__paragraph"
+            style="text-align: right"
+          >Trustworthy people and companies are recorded on the redlist.</p>
         </div>
 
         <div class="col-4">
-          <p class="section__paragraph" style="text-align: left">
-            By doing something on the blacklist
-            your
-            <b>score gets lower.</b>
-          </p>
+          <p
+            class="section__paragraph"
+            style="text-align: left"
+          >Untrustworthy people and companies are recorded on the blacklist.</p>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12">
-          <h4
-            class="consequences__element__subheading"
-          >Possible consequences affected by your score:</h4>
-          <ul class="consequences__element__list">
+          <br>
+          <h4 class="consequences__element__subheading">
+            <span class="section__heading--light">Possible</span>
+            <span class="section__heading--bold">&nbsp;consequences</span>
+          </h4>
+          <ul class="consequences__element__list section__dashed-list">
             <li>Tax reductions</li>
             <li>Easier access to governmental services</li>
             <li>Limited access to high-speed trains and financal services</li>
