@@ -22,7 +22,7 @@
           >In recent years, China has made rapid advances in the incorporation of big data technologies in governance processes. In addition to using big data for more efficient policy making and enforcement, cutting-edge technologies are increasingly being used for social control and social management in order to address societal problems and pre-empt social instabilities. The emerging Social Credit System (SCS) stands out as an initiative with the potential to radically transform the state’s governance of both society and the economy. Under this system, individuals, businesses, social organisations and government agencies are assessed based on their ‘trustworthiness’.</p>
           <img
             class="section__image"
-            src="../assets/imgs/photo-1470256699805-a29e1b58598a.jpg"
+            src="../assets/imgs/surveillance.png"
             alt="Chinese people being rated by a camera software (symbolic picture)"
           >
         </div>
