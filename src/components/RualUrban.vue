@@ -8,7 +8,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 rualurban__text-wrapper">
           <p
-            class="section__paragraph"
+            class="section__paragraph section__paragraph--color--light"
           >But what specific effects have Chinese citizens of the city and the countryside experienced? The chart below illustrates the differences between urban and rural areas.</p>
         </div>
       </div>
@@ -16,7 +16,7 @@
         <div class="col-lg-3 col-12 rualurban__image-wrapper">
           <img src="../assets/house-rural.svg">
           <br>
-          <p class="section__paragraph">
+          <p class="section__paragraph section__paragraph--color--light">
             <span class="rural__element__subheading">Rural</span>
             <span class="element__subheading">&nbsp;area</span>
           </p>
@@ -24,7 +24,7 @@
         <div class="col-lg-3 col-12 rualurban__image-wrapper">
           <img src="../assets/house-city.svg">
           <br>
-          <p class="section__paragraph">
+          <p class="section__paragraph section__paragraph--color--light">
             <span class="urban__element__subheading">Urban</span>
             <span class="element__subheading">&nbsp;area</span>
           </p>
@@ -33,7 +33,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Obtained credit without difficulties</p>
+          <p class="section__paragraph section__paragraph--color--light">Obtained credit without difficulties</p>
         </div>
         <div class="col-5">
           <div class="ruralurban0 ruralurban__diagramm" ref="ruralurban0"></div>
@@ -42,7 +42,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Obtained credit with difficulties</p>
+          <p class="section__paragraph section__paragraph--color--light">Obtained credit with difficulties</p>
         </div>
         <div class="col-5">
           <div class="ruralurban1 ruralurban__diagramm" ref="ruralurban1"></div>
@@ -51,7 +51,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Received lower interest rates on loans from my bank</p>
+          <p class="section__paragraph section__paragraph--color--light">Received lower interest rates on loans from my bank</p>
         </div>
         <div class="col-5">
           <div class="ruralurban2 ruralurban__diagramm" ref="ruralurban2"></div>
@@ -60,7 +60,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Received higher interest rates on savings from my bank</p>
+          <p class="section__paragraph section__paragraph--color--light">Received higher interest rates on savings from my bank</p>
         </div>
         <div class="col-5">
           <div class="ruralurban3 ruralurban__diagramm" ref="ruralurban3"></div>
@@ -69,7 +69,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Received a fast-tracked visa</p>
+          <p class="section__paragraph section__paragraph--color--light">Received a fast-tracked visa</p>
         </div>
         <div class="col-5">
           <div class="ruralurban4 ruralurban__diagramm" ref="ruralurban4"></div>
@@ -79,7 +79,7 @@
       <div class="row justify-content-center">
         <div class="col-4">
           <p
-            class="section__paragraph"
+            class="section__paragraph section__paragraph--color--light"
           >Used deposit-free sharing economy services (such as a rental bike or car)</p>
         </div>
         <div class="col-5">
@@ -89,7 +89,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Used fast-tracked check-ins for hotels or flights</p>
+          <p class="section__paragraph section__paragraph--color--light">Used fast-tracked check-ins for hotels or flights</p>
         </div>
         <div class="col-5">
           <div class="ruralurban6 ruralurban__diagramm" ref="ruralurban6"></div>
@@ -98,7 +98,7 @@
 
       <div class="row justify-content-center">
         <div class="col-4">
-          <p class="section__paragraph">Experienced a positive impact on my online dating</p>
+          <p class="section__paragraph section__paragraph--color--light">Experienced a positive impact on my online dating</p>
         </div>
         <div class="col-5">
           <div class="ruralurban7 ruralurban__diagramm" ref="ruralurban7"></div>

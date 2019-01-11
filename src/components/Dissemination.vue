@@ -7,12 +7,12 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 dissemination__text-wrapper">
-          <h2 class="section__heading">
+          <h2 class="section__heading section__heading--color--light">
             <span class="section__heading--bold">Dissemination</span>
             <span class="section__heading--light">&nbsp;of SCSs</span>
           </h2>
           <p
-            class="section__paragraph"
+            class="section__paragraph section__paragraph--color--light"
           >Most participants of the study report that they take part in a commercial social credit system. 19 % of them in the two most popular ones - Sesame Credit and Tencent Credit.</p>
         </div>
         <div id="disseminationChart" ref="disseminationChart"></div>

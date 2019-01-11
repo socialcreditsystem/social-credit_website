@@ -16,6 +16,12 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
 .section__heading {
   text-align: center;
   font-size: 2.5rem;
+  color: $text-color-dark;
+  padding-bottom: 40px;
+
+  &--color--light {
+    color: $text-color-light;
+  }
 }
 
 .section__heading--bold {
@@ -29,6 +35,11 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
 .section__paragraph {
   font-family: $font-paragraph;
   font-size: 1.2rem;
+  color: $text-color-dark;
+
+  &--color--light {
+    color: $text-color-light;
+  }
 }
 
 .section__image {
