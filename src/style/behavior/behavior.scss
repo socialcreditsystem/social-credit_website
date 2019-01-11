@@ -40,6 +40,7 @@
   font-size: 2rem;
   font-family: $font-heading-bold;
   text-align: center;
+  padding-top: 120px;
 }
 
 .consequences__element__list {
@@ -54,8 +55,4 @@
 
 .consequences__element__list {
   font-size: 1.5rem;
-}
-.consequences__list__line {
-  border-bottom: 1px dashed $text-color-dark;
-  width: 10px;
 }
