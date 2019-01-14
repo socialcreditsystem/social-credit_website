@@ -135,6 +135,9 @@ export default {
     series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
     series2.columns.template.radarColumn.cornerRadius = 20;
 
+    series2.sequencedInterpolation = false;
+    series2.defaultState.transitionDuration = 2500;
+
     series2.columns.template.adapter.add("fill", function(fill, target) {
       return chart.colors.getIndex(target.dataItem.index);
     });

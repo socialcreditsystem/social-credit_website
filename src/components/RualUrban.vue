@@ -32,8 +32,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Obtained credit without difficulties</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Obtained credit without difficulties</p>
         </div>
         <div class="col-5">
           <div class="ruralurban0 ruralurban__diagramm" ref="ruralurban0"></div>
@@ -41,8 +43,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Obtained credit with difficulties</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Obtained credit with difficulties</p>
         </div>
         <div class="col-5">
           <div class="ruralurban1 ruralurban__diagramm" ref="ruralurban1"></div>
@@ -50,8 +54,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Received lower interest rates on loans from my bank</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Received lower interest rates on loans from my bank</p>
         </div>
         <div class="col-5">
           <div class="ruralurban2 ruralurban__diagramm" ref="ruralurban2"></div>
@@ -59,8 +65,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Received higher interest rates on savings from my bank</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Received higher interest rates on savings from my bank</p>
         </div>
         <div class="col-5">
           <div class="ruralurban3 ruralurban__diagramm" ref="ruralurban3"></div>
@@ -68,8 +76,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Received a fast-tracked visa</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Received a fast-tracked visa</p>
         </div>
         <div class="col-5">
           <div class="ruralurban4 ruralurban__diagramm" ref="ruralurban4"></div>
@@ -77,7 +87,7 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-4 section__paragraph--left">
           <p
             class="section__paragraph section__paragraph--color--light"
           >Used deposit-free sharing economy services (such as a rental bike or car)</p>
@@ -88,8 +98,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Used fast-tracked check-ins for hotels or flights</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Used fast-tracked check-ins for hotels or flights</p>
         </div>
         <div class="col-5">
           <div class="ruralurban6 ruralurban__diagramm" ref="ruralurban6"></div>
@@ -97,8 +109,10 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
-          <p class="section__paragraph section__paragraph--color--light">Experienced a positive impact on my online dating</p>
+        <div class="col-4 section__paragraph--left">
+          <p
+            class="section__paragraph section__paragraph--color--light"
+          >Experienced a positive impact on my online dating</p>
         </div>
         <div class="col-5">
           <div class="ruralurban7 ruralurban__diagramm" ref="ruralurban7"></div>
@@ -173,7 +187,6 @@ export default {
       series.dataFields.categoryY = "location";
       series.columns.template.propertyFields.fill = "color";
       series.columns.template.propertyFields.stroke = "color";
-      series.columns.template.tooltipText = "{categoryY}: [bold]{valueX}%[/b]";
 
       // Create Percentage
       let percentageLabel = series.bullets.push(new am4charts.LabelBullet());

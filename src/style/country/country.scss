@@ -4,7 +4,7 @@
   color: $text-color-light;
   padding-bottom: 120px;
   padding-top: 160px;
-
+  text-align: center;
   background-color: #181818;
 
   .section__paragraph {
@@ -16,16 +16,9 @@
   }
 }
 
-.parallax--right {
-  padding-top: 500px;
-  padding-bottom: 100px;
-  margin-left: 58%;
-}
-
-.parallax--left {
-  padding-top: 700px;
-  padding-bottom: 100px;
-  margin-right: 58%;
+.parallax--text {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .parallax__paragraph {

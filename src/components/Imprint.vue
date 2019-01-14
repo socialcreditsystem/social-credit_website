@@ -17,7 +17,7 @@
         </div>
         <div class="col-6 imprint__text-wrapper">
           <p class="section__paragraph">
-            A semester thesis in the course Webdesign 3 - Interactive Information Design
+            A semester paper in the course Webdesign 3 - Interactive Information Design
             Lecturer Dipl.-Des. Lothar B. Blum
           </p>
           <p
