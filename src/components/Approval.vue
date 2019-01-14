@@ -278,6 +278,7 @@ export default {
     },
     changeToRegion: function() {
       changeToCategory("changeToRegion", "Region");
+
       chart.data = [
         {
           category: "west",
@@ -342,9 +343,14 @@ export default {
     chart.legend = new am4charts.Legend();
     chart.legend.position = "right";
     chart.legend.width = am4core.percent(60);
-    chart.legend.labels.template.text = "[white]{name}[/]";
+    chart.legend.labels.template.text = "[#D1D1D1]{name}[/]";
     chart.legend.itemContainers.template.togglable = false;
     chart.legend.reverseOrder = true;
+    chart.legend.labels.template.fontSize = 14;
+    // Darstellungsform der Legendenicons
+    let markerTemplate = chart.legend.markers.template;
+    markerTemplate.width = 8;
+    markerTemplate.height = 25;
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "category";
