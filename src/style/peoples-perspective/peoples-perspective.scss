@@ -1,0 +1,25 @@
+.peoples-perspective {
+    position: relative;
+
+    &__overlay {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    table {
+        overflow: hidden;
+
+        td {
+            width: 180px;
+            height: 110px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000000;
+        }
+    }
+}

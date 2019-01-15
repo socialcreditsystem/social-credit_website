@@ -10,6 +10,7 @@
     <Approval class="section"/>
     <Country class="section"/>
     <RualUrban class="section"/>
+    <PeoplesPerspective class="section"/>
     <Conclusion class="section"/>
     <Imprint class="section"/>
   </div>
@@ -33,6 +34,7 @@ import Country from "./components/Country.vue";
 import RualUrban from "./components/RualUrban.vue";
 import Conclusion from "./components/Conclusion.vue";
 import Imprint from "./components/Imprint.vue";
+import PeoplesPerspective from "./components/PeoplesPerspective.vue";
 
 export default {
   name: "app",
@@ -47,6 +49,7 @@ export default {
     Dissemination,
     Country,
     RualUrban,
+    PeoplesPerspective,
     Conclusion,
     Imprint
   }
