@@ -2,56 +2,43 @@
 
 .navigation {
   color: $text-color-dark;
-  width: 180px;
+  width: 176px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 40%;
-  left: 2%;
+  left: 0%;
   overflow-x: hidden;
-  padding: 8px 0;
+  overflow-y: hidden;
   font-family: $font-heading-light;
+  text-align: center;
 }
 
-.navigation_element:hover {
-  color: $text-color-dark;
-}
-
-.navigation_element {
-  color: $text-color-dark;
-  font-size: 1.2rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.navigation_list {
+.collapsed__navigation__menu {
+  position: fixed;
+  width: 176px;
+  top: 40%;
+  left: 0%;
+  max-height: 430px;
   background-color: white;
-  padding: 10px 10px 10px 10px;
 }
-
-.navigation_button {
-  color: $text-color-dark;
+.navigation__element:hover {
+  color: gray;
   text-decoration: none;
 }
 
-.navigation-button-picture {
-  padding-bottom: 0.2rem;
+.navigation__element {
+  color: $text-color-dark;
+  font-size: 1.125rem;
 }
 
-.navigation_button:hover {
-  color: $text-color-dark;
-  text-decoration: none;
+.navigation__list {
+  padding: 12px 12px 50px 12px;
+
+  li {
+    padding-top: 12px;
+  }
 }
 
 .nav-active {
-  margin-left: 10px;
   font-weight: bold;
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  margin-left: 10px;
-  border-width: 0 10px 15px 10px;
-  border-color: transparent transparent #ffffff transparent;
-  border-style: solid;
 }
