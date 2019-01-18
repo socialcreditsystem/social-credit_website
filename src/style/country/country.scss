@@ -70,7 +70,7 @@ $background-image__gradient--from_city: rgba(0, 0, 0, 0.6);
 $background-image__gradient--to_city: rgba(0, 0, 0, 0.6);
 
 .parallaxcity {
-  /* The image used */
+  /* The image  width: 100%; used */
 
   background: #333;
   color: $text-color-light;
@@ -98,6 +98,6 @@ $background-image__gradient--to_city: rgba(0, 0, 0, 0.6);
 .section__heading__container {
   position: absolute;
   top: 0px;
-  left: 21%;
+  left: 13.3333%;
   background-color: #181818;
 }
