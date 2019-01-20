@@ -4,7 +4,7 @@
   color: $text-color-light;
   padding-bottom: 120px;
   padding-top: 160px;
-  text-align: center;
+  text-align: left;
   background-color: #181818;
 
   .section__paragraph {
@@ -13,12 +13,20 @@
 
   .section__heading {
     text-align: center;
+    padding: 20px 20px 20px 20px;
   }
 }
 
-.parallax--text {
-  margin-top: 150px;
-  margin-bottom: 150px;
+.parallax--divider {
+  margin-top: 50px;
+}
+
+.parallax--divider--top {
+  margin-top: 300px;
+}
+
+.parallax--divider--bottom {
+  margin-bottom: 300px;
 }
 
 .parallax__paragraph {
@@ -26,19 +34,26 @@
   font-size: 1.2rem;
   padding: 20px 20px 20px 20px;
 }
-.paragraph--light {
-  background-color: #ffffff;
-  color: $text-color-dark;
-}
 
-.paragraph--dark {
-  background-color: #181818;
-  color: $text-color-light;
-}
+$background-image: url("../../assets/imgs/photo-1545373127-b86f1551784c.jpg");
+$background-image__gradient--from: rgba(0, 0, 0, 0.6);
+$background-image__gradient--to: rgba(0, 0, 0, 0.6);
 
 .parallaxcountry {
-  /* The image used */
-  background-image: url("../../assets/imgs/photo-1545373127-b86f1551784c.jpg");
+  background: #333;
+  color: $text-color-light;
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
+    $background-image;
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
+    $background-image;
 
   /* Full height */
   min-height: 800px;
@@ -50,10 +65,27 @@
   background-size: cover;
 }
 
-.parallaxcity {
-  /* The image used */
-  background-image: url("../../assets/imgs/photo-1465447142348-e9952c393450.jpg");
+$background-image_city: url("../../assets/imgs/photo-1465447142348-e9952c393450.jpg");
+$background-image__gradient--from_city: rgba(0, 0, 0, 0.6);
+$background-image__gradient--to_city: rgba(0, 0, 0, 0.6);
 
+.parallaxcity {
+  /* The image  width: 100%; used */
+
+  background: #333;
+  color: $text-color-light;
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from_city,
+      $background-image__gradient--to_city
+    ),
+    $background-image_city;
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from_city,
+      $background-image__gradient--to_city
+    ),
+    $background-image_city;
   /* Full height */
   min-height: 800px;
 
@@ -62,4 +94,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.section__heading__container {
+  position: absolute;
+  top: 0px;
+  left: 13.3333%;
+  background-color: #181818;
 }

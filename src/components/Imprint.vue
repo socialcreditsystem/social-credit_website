@@ -14,6 +14,10 @@
             <br>Social Credit System
           </h1>
           <h3>Seen through Chinese eyes</h3>
+          <div class="section__imprint__placeholder"></div>
+          <div class="section__imprint__logo">
+            <img width="184px" src="../assets/imgs/DHBW_d_MOS_46mm_4c_ohne_schutzzone.jpg">
+          </div>
         </div>
         <div class="col-6 imprint__text-wrapper">
           <p class="section__paragraph">
@@ -40,9 +44,6 @@
               target="blank"
             >www.flaticon.com</a>
           </p>
-          <div class="section__imprint__logo">
-            <img width="184px" src="../assets/imgs/DHBW_d_MOS_46mm_4c_ohne_schutzzone.jpg">
-          </div>
         </div>
       </div>
     </div>

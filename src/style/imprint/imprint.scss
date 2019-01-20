@@ -20,6 +20,16 @@
       font-family: $font-heading-bold;
       font-size: 1.3125rem;
     }
+
+    .section__imprint__logo {
+      width: 184px;
+
+      display: inline;
+    }
+
+    .section__imprint__placeholder {
+      padding-top: 24px;
+    }
   }
   .section__paragraph__link {
     color: $text-color-dark;
@@ -30,10 +40,5 @@
     color: $text-color-dark;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .section__imprint__logo {
-    width: 184px;
-    padding-top: 50px;
   }
 }
