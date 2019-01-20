@@ -20,14 +20,14 @@
           </div>
         </div>
         <div class="col-6 imprint__text-wrapper">
-          <p class="section__paragraph">
+          <p class="section__paragraph text-left">
             A semester paper in the course Webdesign 3 - Interactive Information Design
             Lecturer Dipl.-Des. Lothar B. Blum
           </p>
           <p
-            class="section__paragraph"
+            class="section__paragraph text-left"
           >Visualized by the students Benedikt Asal, Philipp Danne, Selina Groß and David Wostracky</p>
-          <p class="section__paragraph">
+          <p class="section__paragraph text-left">
             Based on the study
             <a
               class="section__paragraph__link"
@@ -36,7 +36,7 @@
             >China’s Social Credit Systems and Public Opinion: Explaining High Levels of Approval</a> by Prof. Dr. Genia Kostka (2018)
           </p>
 
-          <p class="section__paragraph">
+          <p class="section__paragraph text-left">
             We have used icons by Freepik and OCHA from
             <a
               class="section__paragraph__link"

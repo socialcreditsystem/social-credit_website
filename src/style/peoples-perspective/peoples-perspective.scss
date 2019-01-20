@@ -16,6 +16,7 @@
         height: 100%;
         width: 100%;
         z-index: 2;
+        pointer-events: none;
 
         &--horizontal {
             background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 100%);
@@ -42,6 +43,20 @@
             }
         }
 
+        &--clickable{
+            cursor: pointer;
+            &__interview-info{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: solid #fff;
+                border-width: 0px 15px 17px 0px;
+                padding: 15px;
+                background-color: $dark-background-color;
+                color: $text-color-light;
+            }
+        }
+
         &__content {
             width: 200px;
             z-index: 3;
@@ -49,8 +64,8 @@
             &__paragraph {
                 padding: 40px;
                 font-family: $font-heading-semibold;
-                font-size: 1.2rem;
-                line-height: 170%;
+                font-size: 1.25rem;
+                line-height: 160%;
             }
         }
 

@@ -9,6 +9,7 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   color: #2c3e50;
 }
 
+
 .section {
   padding: 50px 0;
 }
@@ -17,7 +18,7 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   font-size: 2.5rem;
   color: $text-color-dark;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 
   &--color--light {
     color: $text-color-light;
@@ -36,10 +37,15 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   font-family: $font-paragraph;
   font-size: 1.2rem;
   color: $text-color-dark;
+  text-align: center;
 
   &--color--light {
     color: $text-color-light;
   }
+}
+
+.text-left{
+  text-align: left !important;
 }
 
 .section__image {
@@ -53,8 +59,8 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   top: 0;
   margin: 0;
   position: fixed;
-  -webkit-transition: left 0.8s ease-in-out;
-  transition: left 0.8s ease-in-out;
+  -webkit-transition: left 0.8s cubic-bezier(1, 0.5, 0.5, 1);
+  transition: left 0.8s cubic-bezier(1, 0.5, 0.5, 1);
 }
 
 html {

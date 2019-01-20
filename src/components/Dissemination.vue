@@ -8,7 +8,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 dissemination__text-wrapper">
           <h2 class="section__heading section__heading--color--light">
-            <span class="section__heading--bold">Dissemination</span>
+            <span class="section__heading--bold">Distribution</span>
             <span class="section__heading--light">&nbsp;of SCSs</span>
           </h2>
           <p

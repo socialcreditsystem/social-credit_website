@@ -7,13 +7,13 @@
             <span class="section__heading--bold">Conclusion</span>
           </h2>
           <p
-            class="section__paragraph"
+            class="section__paragraph text-left"
           >Previous studies describe the emerging SCS in China as a state surveillance tool. In contrast, this study shows that Chinese citizens do not share this view. The predominant opinion is positive.</p>
           <p
-            class="section__paragraph"
+            class="section__paragraph text-left"
           >It has also been shown that many more citizens report participating in a commercial SCS than in a governmental SCS.</p>
           <p
-            class="section__paragraph"
+            class="section__paragraph text-left"
           >The results of the study are in contrast to previous studies and reports on this topic with the positive view of the Chinese citizens. They perceive SCS as an instrument to improve quality of life and close insitutional and regulatroy gaps leading to more honest and law-abiding behavior in society.</p>
         </div>
       </div>

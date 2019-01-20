@@ -70,14 +70,14 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-7 col-12">
+        <div class="col-lg-8 col-12">
           <h4 class="consequences__element__subheading">
             <span class="section__heading--light">Possible</span>
             <span class="section__heading--bold">&nbsp;consequences</span>
           </h4>
           <ul class="consequences__element__list section__dashed-list">
-            <li>Tax reductions</li>
             <li>Easier access to governmental services</li>
+            <li>Tax reductions</li>
             <li>Limited access to high-speed trains and financal services</li>
           </ul>
         </div>

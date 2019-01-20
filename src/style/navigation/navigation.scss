@@ -4,22 +4,43 @@
   color: $text-color-dark;
   width: 176px;
   position: fixed;
-  z-index: 15;
-  top: 40%;
+  z-index: 3;
+  top: 20%;
   left: 0%;
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: $font-heading-light;
   text-align: center;
+
+  &__button {
+    margin-right: 57px;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 0.3s;
+
+    &[aria-expanded=true] {
+      margin-right: 0;
+    }
+
+    &-picture {
+      padding-top: 25px;
+
+      &__inline {
+        padding-top: 25px;
+      }
+    }
+  }
 }
 
 .collapsed__navigation__menu {
   position: fixed;
   width: 176px;
-  top: 40%;
+  top: 20%;
   left: 0%;
   max-height: 430px;
   background-color: white;
+  -webkit-box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.2);
 }
 
 .navigation__element:hover {
@@ -33,7 +54,7 @@
 }
 
 .navigation__list {
-  padding: 12px 12px 50px 12px;
+  padding: 6px 12px 25px 12px;
 
   li {
     padding-top: 12px;
@@ -41,5 +62,5 @@
 }
 
 .nav-active {
-  font-weight: bold;
+  font-family: $font-heading-bold;
 }

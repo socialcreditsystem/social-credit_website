@@ -31,8 +31,8 @@
                 <td><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
-                <td><img src="https://picsum.photos/300/300"></td>
-                <td><img src="https://picsum.photos/300/300"></td>
+                <td v-on:click="changeToPerson(1)" class="peoples-perspective__table--clickable"><img src="https://picsum.photos/300/300"></td>
+                <td v-on:click="changeToPerson(0)" class="peoples-perspective__table--clickable"><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
             </tr>
@@ -41,7 +41,7 @@
                 <td><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
                 <td><img src="https://picsum.photos/300/300"></td>
-                <td colspan=4 rowspan=4 id="qouteContent" class="peoples-perspective__table__content"><p class="peoples-perspective__table__content__paragraph">„Take, for instance, the example of using shared bikes.
+                <td colspan=4 rowspan=4 class="peoples-perspective__table__content"><p class="peoples-perspective__table__content__paragraph" id="quoteContent">„Take, for instance, the example of using shared bikes.
 If someone does not lock a shared bike after using it properly, her or his own credit will be influenced. Alipay can collect such very detailed information from different aspects in life and include this in a score. Through such detailed accounting, SCSs can track individuals’ actions and create trust in society“</p></td>
                 <td><img src="https://picsum.photos/300/300"></td>
             </tr>
@@ -97,7 +97,33 @@ If someone does not lock a shared bike after using it properly, her or his own c
 // Stylesheets
 import "../style/peoples-perspective/peoples-perspective.scss";
 
+let person1 = ["Interview 5, June 2018", "sometimes there is not enough money left in Alipay and Sesame Credit can be used for ordering delivery food.\nThis is convenient and increases life quality."]
+let person2 = ["Interview 9, July 2018", "generate a guide and norm for personal social behavior with the Chinese society. It could improve the efficiency of social operations"]
+let persons = [person1, person2]
+
 export default {
-  name: "PeoplesPerspective"
+  name: "PeoplesPerspective",
+  methods: {
+    changeToPerson(person) {
+        let currentPerson = persons[person];
+
+        document.getElementById("quoteContent").innerText = '"' + currentPerson[1] + '"'; 
+
+        let oldElement = document.getElementById("interviewInfo");
+
+        if(oldElement){
+            oldElement.parentNode.removeChild(oldElement);
+        }
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('class', 'peoples-perspective__table--clickable__interview-info');
+        newDiv.id = "interviewInfo";
+        var node = document.createTextNode(currentPerson[0]);
+        newDiv.appendChild(node);
+
+        var element = event.target.parentNode;
+        element.insertBefore(newDiv, event.target);
+    }
+  }
 };
 </script>

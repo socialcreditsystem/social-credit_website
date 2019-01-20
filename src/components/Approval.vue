@@ -15,7 +15,10 @@
       <div class="row justify-content-center">
         <div class="col-8 approval__controls">
           <ul class="approval__controls__element">
-            <!-- <li v-on:click="changeToOverall">Overall</li> -->
+            <li v-on:click="changeToOverall" id="changeToOverall" class="approval__controls__element__group">
+              <img class="approval__controls__element__icons" src="../assets/filter-overall.svg">
+              <span class="approval__controls__element__label">Overall</span>
+            </li>
             <li
               v-on:click="changeToAge"
               id="changeToAge"
@@ -128,6 +131,7 @@ export default {
   name: "Approval",
   methods: {
     changeToOverall: function() {
+      changeToCategory("changeToOverall", "Overall");
       chart.data = [
         {
           category: "Overall",
@@ -347,10 +351,11 @@ export default {
     chart.legend.itemContainers.template.togglable = false;
     chart.legend.reverseOrder = true;
     chart.legend.labels.template.fontSize = 14;
+    chart.legend.labels.template.paddingLeft = 5;
     // Darstellungsform der Legendenicons
     let markerTemplate = chart.legend.markers.template;
-    markerTemplate.width = 8;
-    markerTemplate.height = 25;
+    markerTemplate.width = 20;
+    markerTemplate.height = 20;
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = "category";

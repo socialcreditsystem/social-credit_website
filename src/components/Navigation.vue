@@ -5,7 +5,6 @@
         <div class="col-9 navigation">
           <a class="navigation__button" href="#" data-toggle="collapse" data-target="#menu">
             <img
-              style="padding-top: 20px;"
               class="navigation__button-picture"
               src="../assets/navButtonCircle.svg"
             >
@@ -17,7 +16,6 @@
                 <a class="navigation__button" href="#" data-toggle="collapse" data-target="#menu">
                   <img
                     class="navigation__button-picture__inline"
-                    style="padding-top: 20px;"
                     src="../assets/navOpen.svg"
                   >
                 </a>

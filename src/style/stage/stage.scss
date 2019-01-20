@@ -9,17 +9,13 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
   color: $text-color-light;
 
-  background-image: linear-gradient(
-      to bottom,
-      $background-image__gradient--from,
-      $background-image__gradient--to
-    ),
+  background-image: linear-gradient(to bottom,
+    $background-image__gradient--from,
+    $background-image__gradient--to),
     $background-image;
-  background-image: -webkit-linear-gradient(
-      top,
-      $background-image__gradient--from,
-      $background-image__gradient--to
-    ),
+  background-image: -webkit-linear-gradient(top,
+    $background-image__gradient--from,
+    $background-image__gradient--to),
     $background-image;
 
   background-position: bottom;
@@ -27,7 +23,7 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   background-size: cover;
 
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .stage__headline {

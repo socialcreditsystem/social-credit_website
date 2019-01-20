@@ -7,7 +7,7 @@ $approval-bar-fill-color: #ffffff;
 
 .types {
   margin-top: 125px;
-  padding: 0 0 60px;
+  padding: 0 0 120px;
   background: -webkit-linear-gradient(left,
     $dark-background-color 0%,
     $dark-background-color 50%,
@@ -38,7 +38,7 @@ $approval-bar-fill-color: #ffffff;
   &__heading {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &__subheading {
@@ -61,7 +61,7 @@ $approval-bar-fill-color: #ffffff;
 
 .types__element__approval {
   width: 80%;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 .types__element__approval__bar {
