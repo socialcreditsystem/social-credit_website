@@ -105,24 +105,29 @@ export default {
   name: "PeoplesPerspective",
   methods: {
     changeToPerson(person) {
-        let currentPerson = persons[person];
+        let cellHTML = event.target.parentNode.innerHTML;
+        let newDivClass = "peoples-perspective__table--clickable__interview-info";
 
-        document.getElementById("quoteContent").innerText = '"' + currentPerson[1] + '"'; 
+        if(!cellHTML.includes(newDivClass)){
+            let currentPerson = persons[person];
 
-        let oldElement = document.getElementById("interviewInfo");
+            document.getElementById("quoteContent").innerText = '"' + currentPerson[1] + '"'; 
 
-        if(oldElement){
-            oldElement.parentNode.removeChild(oldElement);
+            let oldElement = document.getElementById("interviewInfo");
+
+            if(oldElement){
+                oldElement.parentNode.removeChild(oldElement);
+            }
+            
+            let newDiv = document.createElement("div");
+            newDiv.setAttribute('class', newDivClass);
+            newDiv.id = "interviewInfo";
+            let node = document.createTextNode(currentPerson[0]);
+            newDiv.appendChild(node);
+
+            let element = event.target.parentNode;
+            element.insertBefore(newDiv, event.target);
         }
-
-        var newDiv = document.createElement("div");
-        newDiv.setAttribute('class', 'peoples-perspective__table--clickable__interview-info');
-        newDiv.id = "interviewInfo";
-        var node = document.createTextNode(currentPerson[0]);
-        newDiv.appendChild(node);
-
-        var element = event.target.parentNode;
-        element.insertBefore(newDiv, event.target);
     }
   }
 };
