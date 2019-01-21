@@ -13,28 +13,32 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-3 col-12 rualurban__image-wrapper">
-          <img src="../assets/house-rural.svg">
-          <br>
-          <p class="section__paragraph section__paragraph--color--light">
-            <span class="rural__element__subheading">Rural</span>
-            <span class="element__subheading">&nbsp;area</span>
-          </p>
+        <div class="col-md-4 col-12 rural__image-wrapper">
+          <div class="rualurban__image-wrapper">
+            <img src="../assets/house-rural.svg">
+            <br>
+            <p class="section__paragraph section__paragraph--color--light">
+              <span class="rural__element__subheading">Rural</span>
+              <span class="element__subheading">&nbsp;area</span>
+            </p>
+          </div>
         </div>
-        <div class="col-lg-3 col-12 rualurban__image-wrapper">
-          <img src="../assets/house-city.svg">
-          <br>
-          <p class="section__paragraph section__paragraph--color--light">
-            <span class="urban__element__subheading">Urban</span>
-            <span class="element__subheading">&nbsp;area</span>
-          </p>
+        <div class="col-md-4 col-12 urban__image-wrapper">
+          <div class="rualurban__image-wrapper">
+            <img src="../assets/house-city.svg">
+            <br>
+            <p class="section__paragraph section__paragraph--color--light">
+              <span class="urban__element__subheading">Urban</span>
+              <span class="element__subheading">&nbsp;area</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Obtained credit without difficulties</p>
         </div>
         <div class="col-5">
@@ -43,9 +47,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Obtained credit with difficulties</p>
         </div>
         <div class="col-5">
@@ -54,9 +58,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Received lower interest rates on loans from my bank</p>
         </div>
         <div class="col-5">
@@ -65,9 +69,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Received higher interest rates on savings from my bank</p>
         </div>
         <div class="col-5">
@@ -76,9 +80,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Received a fast-tracked visa</p>
         </div>
         <div class="col-5">
@@ -87,9 +91,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Used deposit-free sharing economy services (such as a rental bike or car)</p>
         </div>
         <div class="col-5">
@@ -98,9 +102,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Used fast-tracked check-ins for hotels or flights</p>
         </div>
         <div class="col-5">
@@ -109,9 +113,9 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4 section__paragraph--left">
+        <div class="col-5 section__paragraph--left">
           <p
-            class="section__paragraph section__paragraph--color--light text-left"
+            class="section__paragraph section__paragraph--color--light text-right"
           >Experienced a positive impact on my online dating</p>
         </div>
         <div class="col-5">
