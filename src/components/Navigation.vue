@@ -4,20 +4,14 @@
       <div class="row justify-content-center">
         <div class="col-9 navigation">
           <a class="navigation__button" href="#" data-toggle="collapse" data-target="#menu">
-            <img
-              class="navigation__button-picture"
-              src="../assets/navButtonCircle.svg"
-            >
+            <img class="navigation__button-picture" src="../assets/navButtonCircle.svg">
           </a>
 
           <ul class="list-unstyled">
             <li class="navigation__main__list">
               <div class="collapse in collapsed__navigation__menu" id="menu">
                 <a class="navigation__button" href="#" data-toggle="collapse" data-target="#menu">
-                  <img
-                    class="navigation__button-picture__inline"
-                    src="../assets/navOpen.svg"
-                  >
+                  <img class="navigation__button-picture__inline" src="../assets/navOpen.svg">
                 </a>
                 <ul class="list-unstyled navigation__list">
                   <li>

@@ -9,7 +9,6 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   color: #2c3e50;
 }
 
-
 .section {
   padding: 50px 0;
 }
@@ -44,11 +43,11 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-.text-left{
+.text-left {
   text-align: left !important;
 }
 
-.text-right{
+.text-right {
   text-align: right !important;
 }
 
@@ -87,4 +86,7 @@ html {
       border-top: none;
     }
   }
+}
+.wow {
+  visibility: hidden;
 }

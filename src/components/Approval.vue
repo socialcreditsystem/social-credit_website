@@ -15,7 +15,11 @@
       <div class="row justify-content-center">
         <div class="col-8 approval__controls">
           <ul class="approval__controls__element">
-            <li v-on:click="changeToOverall" id="changeToOverall" class="approval__controls__element__group">
+            <li
+              v-on:click="changeToOverall"
+              id="changeToOverall"
+              class="approval__controls__element__group"
+            >
               <img class="approval__controls__element__icons" src="../assets/filter-overall.svg">
               <span class="approval__controls__element__label">Overall</span>
             </li>
