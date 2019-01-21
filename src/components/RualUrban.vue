@@ -4,7 +4,7 @@
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 <template>
   <section class="rualurban" id="rualurban">
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-duration="2s">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 rualurban__text-wrapper">
           <p

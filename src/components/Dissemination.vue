@@ -1,10 +1,6 @@
-
- <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 <template>
   <section class="dissemination" id="dissemination">
-    <div class="container">
+    <div class="container wow slideInUp" data-wow-duration="2s">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 dissemination__text-wrapper">
           <h2 class="section__heading section__heading--color--light">

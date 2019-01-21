@@ -1,6 +1,6 @@
 <template>
   <section class="approval" id="approval">
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-duration="2s">
       <div class="row justify-content-center">
         <div class="col-8 approval__intro">
           <h2 class="section__heading section__heading--color--light">

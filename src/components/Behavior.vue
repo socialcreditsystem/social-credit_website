@@ -1,6 +1,6 @@
 <template>
   <section class="behavior" id="behavior">
-    <div class="container">
+    <div class="container wow zoomIn" data-wow-duration="2s">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12 behavior__text-wrapper">
           <h2 class="section__heading">
