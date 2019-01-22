@@ -191,6 +191,7 @@ export default {
       series.dataFields.categoryY = "location";
       series.columns.template.propertyFields.fill = "color";
       series.columns.template.propertyFields.stroke = "color";
+      series.columns.template.tooltipText = "{categoryY}";
 
       // Create Percentage
       let percentageLabel = series.bullets.push(new am4charts.LabelBullet());

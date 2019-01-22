@@ -1,6 +1,6 @@
 <template>
   <section class="d-flex align-items-end stage" id="stage">
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-duration="3s">
       <div class="row justify-content-center">
         <div class="col-9 stage__headline">
           <h3>Seen through Chinese eyes</h3>
