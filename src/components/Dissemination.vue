@@ -29,7 +29,6 @@ import "../style/dissemination/dissemination.scss";
 export default {
   name: "Dissemination",
   mounted() {
-    // Create chart instance
     let chart = am4core.create("disseminationChart", am4charts.RadarChart);
 
     // Add data

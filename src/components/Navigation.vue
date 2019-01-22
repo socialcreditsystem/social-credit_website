@@ -66,7 +66,6 @@ $(document).ready(function() {
   var top8 = $("#peoples-perspective").offset().top - 1;
   var top9 = $("#conclusion").offset().top - 1;
 
-  var isready = false;
   $(document).scroll(function() {
     var scrollPos = $(document).scrollTop();
     if (scrollPos >= top1 && scrollPos < top2) {
@@ -83,8 +82,6 @@ $(document).ready(function() {
     } else if (scrollPos >= top5 && scrollPos < top6) {
       $(".navigation__element").removeClass("nav-active");
       $(".usage-nav").addClass("nav-active");
-
-      isready = true;
     } else if (scrollPos >= top6 && scrollPos < top7) {
       $(".navigation__element").removeClass("nav-active");
       $(".approval-nav").addClass("nav-active");
