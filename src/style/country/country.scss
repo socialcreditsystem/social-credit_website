@@ -42,13 +42,17 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
 .parallaxcountry {
   background: #333;
   color: $text-color-light;
-  background-image: linear-gradient(to bottom,
-    $background-image__gradient--from,
-    $background-image__gradient--to),
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
     $background-image;
-  background-image: -webkit-linear-gradient(top,
-    $background-image__gradient--from,
-    $background-image__gradient--to),
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
     $background-image;
 
   /* Full height */
@@ -70,13 +74,17 @@ $background-image__gradient--to_city: rgba(0, 0, 0, 0.6);
 
   background: #333;
   color: $text-color-light;
-  background-image: linear-gradient(to bottom,
-    $background-image__gradient--from_city,
-    $background-image__gradient--to_city),
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from_city,
+      $background-image__gradient--to_city
+    ),
     $background-image_city;
-  background-image: -webkit-linear-gradient(top,
-    $background-image__gradient--from_city,
-    $background-image__gradient--to_city),
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from_city,
+      $background-image__gradient--to_city
+    ),
     $background-image_city;
   /* Full height */
   min-height: 800px;

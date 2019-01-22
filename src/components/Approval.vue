@@ -1,6 +1,6 @@
 <template>
   <section class="approval" id="approval">
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-duration="2s">
       <div class="row justify-content-center">
         <div class="col-8 approval__intro">
           <h2 class="section__heading section__heading--color--light">
@@ -15,7 +15,11 @@
       <div class="row justify-content-center">
         <div class="col-8 approval__controls">
           <ul class="approval__controls__element">
-            <li v-on:click="changeToOverall" id="changeToOverall" class="approval__controls__element__group">
+            <li
+              v-on:click="changeToOverall"
+              id="changeToOverall"
+              class="approval__controls__element__group"
+            >
               <img class="approval__controls__element__icons" src="../assets/filter-overall.svg">
               <span class="approval__controls__element__label">Overall</span>
             </li>

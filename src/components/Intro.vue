@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-12 intro__text-wrapper">
           <div class="intro__study-info row justify-content-center align-items-center">
             <img src="../assets/info-circle.svg" alt="Info" class="intro__study-info__icon col-1">
-            <div class="intro__study-info__text col-11">
+            <div class="intro__study-info__text col-11 wow fadeIn" data-wow-duration="2s">
               The following visualization is based on a study by Prof. Dr. Genia Kostka. Would you like to learn more about the study?
               <a
                 v-on:click="showSource"
@@ -13,12 +13,13 @@
               >Learn more</a>.
             </div>
           </div>
-          <h2 class="section__heading">
+          <h2 class="section__heading wow fadeIn" data-wow-duration="2s">
             <span class="section__heading--bold">Social Credit System</span>
             <span class="section__heading--light">&nbsp;What?</span>
           </h2>
           <p
-            class="section__paragraph intro__paragraph text-left"
+            class="section__paragraph intro__paragraph text-left wow fadeIn"
+            data-wow-duration="2s"
           >In recent years, China has made rapid advances in the incorporation of big data technologies in governance processes. In addition to using big data for more efficient policy making and enforcement, cutting-edge technologies are increasingly being used for social control and social management in order to address societal problems and pre-empt social instabilities. The emerging Social Credit System (SCS) stands out as an initiative with the potential to radically transform the state’s governance of both society and the economy. Under this system, individuals, businesses, social organisations and government agencies are assessed based on their ‘trustworthiness’.</p>
           <img
             class="section__image"
