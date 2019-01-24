@@ -117,6 +117,20 @@
         </div>
 
         <div class="row justify-content-center">
+          <div class="col-lg-8 col-12 picture">
+            <img src="../assets/imgs/filter_commercial.svg">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-12">
+            <p class="score__label">NEW SCORE</p>
+            <h4 class="score__number">
+              <span class="section__heading--bold scs__score">618</span>
+            </h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
           <div class="col-lg-8 col-12">
             <h4 class="consequences__element__subheading">
               <span class="section__heading--light">Possible</span>
@@ -138,7 +152,6 @@
 <script>
 // Stylesheets
 import "../style/behavior/behavior.scss";
-import { truncateWithEllipsis } from "@amcharts/amcharts4/.internal/core/utils/Utils";
 
 export default {
   name: "Behavior",
@@ -160,6 +173,19 @@ export default {
 
         $("#label__governmental").addClass("toogle__text--invisible");
         $("#label__commercial").removeClass("toogle__text--invisible");
+
+        var $this = $(".scs__score");
+
+        jQuery({ Counter: 0 }).animate(
+          { Counter: $this.text() },
+          {
+            duration: 1000,
+            easing: "swing",
+            step: function() {
+              $this.text(Math.ceil(this.Counter));
+            }
+          }
+        );
       }
     }
   }

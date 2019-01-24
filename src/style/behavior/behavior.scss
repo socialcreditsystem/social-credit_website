@@ -9,6 +9,13 @@
     padding: 20px 0;
   }
 
+  .score__label {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: $font-heading-light;
+    padding-top: 15px;
+  }
+
   .section__paragraph__consequences {
     padding: 20px 0;
     text-align: center;
@@ -42,6 +49,13 @@
   text-align: center;
   padding-top: 80px;
   padding-bottom: 20px;
+}
+
+.score__number {
+  font-size: 2rem;
+  font-family: $font-heading-bold;
+  text-align: center;
+  color: #3b4c81;
 }
 
 .consequences__element__list {
