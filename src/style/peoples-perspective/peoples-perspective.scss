@@ -5,7 +5,7 @@
     padding-top: 200px;
 
     &__intro {
-        margin-left: -120px;
+        margin-left: -160px;
     }
 
     &__overlay {
@@ -31,6 +31,7 @@
         margin-top: -200px;
         overflow: hidden;
         position: relative;
+        width: 100%;
 
         td {
             padding: 8px;
@@ -45,12 +46,14 @@
             }
         }
 
-        &--clickable{
+        &--clickable {
             cursor: pointer;
-            img{
+
+            img {
                 filter: none !important;
             }
-            &__interview-info{
+
+            &__interview-info {
                 position: absolute;
                 top: 4px;
                 left: 5px;

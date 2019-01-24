@@ -1,15 +1,14 @@
 <template>
   <section class="peoples-perspective wow fadeIn" data-wow-duration="2s" id="peoples-perspective">
-    <div class="container">
-      <div class="row justify-content-center peoples-perspective__intro">
-        <div class="col-6">
-          <h2 class="section__heading">
-            <span class="section__heading--bold">People's</span>
-            <span class="section__heading--light">Perspective</span>
-          </h2>
-          <p
-            class="section__paragraph"
-          >We have already seen that the Chinese are very positive about the SCS. The best way to understand why this is the case is to let the citizens speak.</p>
+      <div class="container">
+        <div class="row justify-content-center peoples-perspective__intro">
+            <div class="col-6">
+                <h2 class="section__heading">
+                    <span class="section__heading--bold">People's </span>
+                    <span class="section__heading--light">Perspective</span>
+                </h2>
+                <p class="section__paragraph">We have already seen that the Chinese are very positive about the SCS. The best way to understand why this is the case is to let the citizens speak.</p>
+            </div>
         </div>
       </div>
       <table class="peoples-perspective__table">
@@ -201,7 +200,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
   </section>
 </template>
 
@@ -237,8 +235,11 @@ export default {
     changeToPerson(person) {
       let cellHTML = event.target.parentNode.innerHTML;
       let newDivClass = "peoples-perspective__table--clickable__interview-info";
-
-      if (!cellHTML.includes(newDivClass)) {
+      if (
+        !cellHTML.includes(newDivClass) &&
+        event.target.parentNode.className ==
+          "peoples-perspective__table--clickable"
+      ) {
         let currentPerson = persons[person];
 
         document.getElementById("quoteContent").innerText =
