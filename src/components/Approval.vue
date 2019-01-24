@@ -18,23 +18,23 @@
             <li
               v-on:click="changeToOverall"
               id="changeToOverall"
-              class="approval__controls__element__group"
-            >
-              <img class="approval__controls__element__icons" src="../assets/filter-overall.svg">
-              <span class="approval__controls__element__label">Overall</span>
-            </li>
-            <li
-              v-on:click="changeToAge"
-              id="changeToAge"
               class="approval__controls__element__group approval__controls__element__group--default"
             >
               <img
                 class="approval__controls__element__icons approval__controls__element__icons--default"
-                src="../assets/filter-age.svg"
+                src="../assets/filter-overall.svg"
               >
               <span
                 class="approval__controls__element__label approval__controls__element__label--default"
-              >Age</span>
+              >Overall</span>
+            </li>
+            <li
+              v-on:click="changeToAge"
+              id="changeToAge"
+              class="approval__controls__element__group"
+            >
+              <img class="approval__controls__element__icons" src="../assets/filter-age.svg">
+              <span class="approval__controls__element__label">Age</span>
             </li>
             <li
               v-on:click="changeToGender"
@@ -79,7 +79,7 @@
           </ul>
         </div>
       </div>
-      <h3 class="approval__controls__heading" id="approvalHeading">Age</h3>
+      <h3 class="approval__controls__heading" id="approvalHeading">Overall</h3>
       <div class="row justify-content-end">
         <div class="col-11 approval__chart" ref="chartdiv"></div>
       </div>
@@ -102,7 +102,6 @@ function changeToCategory(id, categoryName) {
   document.getElementById(id).style.opacity = 1;
   document.getElementById("approvalHeading").innerText = categoryName;
 }
-
 
 /* Imports */
 import * as am4core from "@amcharts/amcharts4/core";
@@ -322,28 +321,12 @@ export default {
 
     chart.data = [
       {
-        category: "14-30 years",
-        stronglyDisapprove: 6.8,
-        somewhatDisapprove: 7.2,
-        neutral: 19.9,
-        somewhatApprove: 33.6,
-        stronglyApprove: 45.1
-      },
-      {
-        category: "31-50 years",
-        stronglyDisapprove: 0.5,
-        somewhatDisapprove: 0.5,
-        neutral: 17.0,
-        somewhatApprove: 28.5,
-        stronglyApprove: 53.4
-      },
-      {
-        category: "51-65 years",
-        stronglyDisapprove: 0,
-        somewhatDisapprove: 4.3,
-        neutral: 18.4,
-        somewhatApprove: 21.0,
-        stronglyApprove: 56.4
+        category: "Overall",
+        stronglyDisapprove: 0.6,
+        somewhatDisapprove: 0.8,
+        neutral: 18.7,
+        somewhatApprove: 31.1,
+        stronglyApprove: 48.9
       }
     ];
 

@@ -27,6 +27,9 @@
           <p
             class="section__paragraph text-left"
           >Visualized by the students Benedikt Asal, Philipp Danne, Selina Groß and David Wostracky</p>
+          <p class="section__paragraph text-left">DHBW Campus Mosbach, Department Online Media</p>
+
+          <p class="section__paragraph text-left">Date of submission: 28.01.2019</p>
           <p class="section__paragraph text-left">
             Based on the study
             <a
