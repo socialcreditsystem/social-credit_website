@@ -9,13 +9,17 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
   color: $text-color-light;
 
-  background-image: linear-gradient(to bottom,
-    $background-image__gradient--from,
-    $background-image__gradient--to),
+  background-image: linear-gradient(
+      to bottom,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
     $background-image;
-  background-image: -webkit-linear-gradient(top,
-    $background-image__gradient--from,
-    $background-image__gradient--to),
+  background-image: -webkit-linear-gradient(
+      top,
+      $background-image__gradient--from,
+      $background-image__gradient--to
+    ),
     $background-image;
 
   background-position: bottom;
@@ -34,7 +38,7 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   h1 {
     font-family: $font-paragraph;
     margin: 15px 0;
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   h3 {
@@ -45,5 +49,6 @@ $background-image__gradient--to: rgba(0, 0, 0, 0.6);
   h6 {
     font-family: $font-heading-light;
     font-size: 1.25rem;
+    line-height: 1.44rem;
   }
 }

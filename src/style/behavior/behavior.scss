@@ -51,6 +51,9 @@
   padding-bottom: 20px;
 }
 
+.picture {
+  margin-top: 20px;
+}
 .score__number {
   font-size: 2rem;
   font-family: $font-heading-bold;
@@ -61,7 +64,7 @@
 .consequences__element__list {
   margin-left: -20px;
   font-family: $font-paragraph;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 
   li {
     padding: 15px !important;

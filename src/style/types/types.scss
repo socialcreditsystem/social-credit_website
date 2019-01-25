@@ -1,18 +1,20 @@
 @import "../utilities/variables";
 
-$dark-background-color: #2E2E2E;
-$governmental-scs__background-color: #3B4C81;
+$dark-background-color: #2e2e2e;
+$governmental-scs__background-color: #3b4c81;
 $approval-bar-color: rgba(255, 255, 255, 0.3);
 $approval-bar-fill-color: #ffffff;
 
 .types {
   margin-top: 125px;
   padding: 0 0 120px;
-  background: -webkit-linear-gradient(left,
+  background: -webkit-linear-gradient(
+    left,
     $dark-background-color 0%,
     $dark-background-color 50%,
     $governmental-scs__background-color 50.001%,
-    $governmental-scs__background-color 100%);
+    $governmental-scs__background-color 100%
+  );
 }
 
 .types__wrapper {
@@ -100,7 +102,8 @@ $approval-bar-fill-color: #ffffff;
 
 .types__element__usage__text {
   font-family: $font-paragraph;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.64rem;
   margin-top: 15px;
 }
 

@@ -34,7 +34,8 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
 
 .section__paragraph {
   font-family: $font-paragraph;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.64rem;
   color: $text-color-dark;
   text-align: center;
 
@@ -43,6 +44,9 @@ $dashed-border-color: rgba(0, 0, 0, 0.2);
   }
 }
 
+.section__data__paragraph {
+  text-align: left !important;
+}
 .text-left {
   text-align: left !important;
 }
@@ -74,7 +78,8 @@ html {
   text-align: center;
   margin-left: -40px;
   font-family: $font-paragraph;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.64rem;
   list-style-type: none;
   color: $text-color-dark;
 
