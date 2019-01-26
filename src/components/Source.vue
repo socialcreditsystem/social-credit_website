@@ -22,9 +22,9 @@
           <p class="section__paragraph section__data__paragraph">
             The study tries to investigate the following aspects:
             <br>1. Document the overall
-            <b>level of citizens’ (non-)approval</b> of different SCSs
+            <b>level of citizens’ (non-)approval</b> of different SCS
             <br>2. Identify the
-            <b>underlying factors</b> that drive variations in approval of SCSs
+            <b>underlying factors</b> that drive variations in approval of SCS
           </p>
 
           <p
