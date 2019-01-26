@@ -5,7 +5,7 @@
         <div class="col-6">
           <h2 class="section__heading">
             <span class="section__heading--bold">People's</span>
-            <span class="section__heading--light">Perspective</span>
+            <span class="section__heading--light">&nbsp;Perspective</span>
           </h2>
           <p
             class="section__paragraph"
