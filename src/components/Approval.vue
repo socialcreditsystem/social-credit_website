@@ -9,7 +9,7 @@
           </h2>
           <p
             class="section__paragraph section__paragraph--color--light"
-          >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
+          >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCS. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
         </div>
       </div>
       <div class="row justify-content-center">
