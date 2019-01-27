@@ -64,6 +64,17 @@
                 padding: 15px;
                 background-color: $dark-background-color;
                 color: $text-color-light;
+
+                &--interview-date {
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    font-family: $font-heading-light;
+                }
+
+                &--interview-number {
+                    font-size: 1rem;
+                    font-family: $font-heading-semibold;
+                }
             }
         }
 
