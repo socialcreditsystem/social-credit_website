@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-12 dissemination__text-wrapper">
           <h2 class="section__heading section__heading--color--light">
             <span class="section__heading--bold">Distribution</span>
-            <span class="section__heading--light">&nbsp;of SCSs</span>
+            <span class="section__heading--light">&nbsp;of SCS</span>
           </h2>
           <p
             class="section__paragraph section__paragraph--color--light"
@@ -30,8 +30,8 @@ export default {
   name: "Dissemination",
   mounted() {
     let chart = am4core.create("disseminationChart", am4charts.RadarChart);
-
     // Add data
+
     chart.data = [
       {
         category: "Government PilotResearch",

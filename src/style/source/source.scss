@@ -29,13 +29,16 @@
     padding-bottom: 30px;
   }
   .section__paragraph__link {
-    color: $text-color-dark;
+    color: #4261c1;
     text-decoration: underline;
     cursor: pointer;
   }
   .section__paragraph__link:hover {
-    color: $text-color-dark;
+    color: #4261c1;
     text-decoration: none;
     cursor: pointer;
+  }
+  .section__data__paragraph {
+    text-align: left !important;
   }
 }

@@ -20,7 +20,7 @@
             <div class="parallax--divider--top"></div>
             <p
               class="parallax__paragraph"
-            >The findings show, further, that there is less approval for SCSs in rural areas. One potential explanation is that respondents in rural areas are less familiar with SCSs and hence more sceptical.</p>
+            >The findings show, further, that there is less approval for SCS in rural areas. One potential explanation is that respondents in rural areas are less familiar with SCS and hence more sceptical.</p>
 
             <div class="parallax--divider"></div>
             <p

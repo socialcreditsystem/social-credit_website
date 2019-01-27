@@ -9,7 +9,7 @@
           </h2>
           <p
             class="section__paragraph section__paragraph--color--light"
-          >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCSs. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
+          >Regardless of their demographics, most Chinese strongly approve or somewhat approve the SCS. But the degree of approval varies across age, income, gender, education and region. Let’s explore the differences in the following charts.</p>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -149,6 +149,7 @@ export default {
     },
     changeToAge: function() {
       changeToCategory("changeToAge", "Age");
+
       chart.data = [
         {
           category: "14-30 years",
@@ -178,6 +179,7 @@ export default {
     },
     changeToGender: function() {
       changeToCategory("changeToGender", "Gender");
+
       chart.data = [
         {
           category: "female",
@@ -199,6 +201,7 @@ export default {
     },
     changeToEducation: function() {
       changeToCategory("changeToEducation", "Education");
+
       chart.data = [
         {
           category: "no",
@@ -236,6 +239,7 @@ export default {
     },
     changeToIncome: function() {
       changeToCategory("changeToIncome", "Income");
+
       chart.data = [
         {
           category: "less than 1000 RMB",
@@ -265,6 +269,7 @@ export default {
     },
     changeToLocation: function() {
       changeToCategory("changeToLocation", "Location");
+
       chart.data = [
         {
           category: "rural",
@@ -317,6 +322,7 @@ export default {
   },
   mounted() {
     chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
+
     chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
     chart.data = [
@@ -338,7 +344,7 @@ export default {
     chart.legend.labels.template.text = "[#D1D1D1]{name}[/]";
     chart.legend.itemContainers.template.togglable = false;
     chart.legend.reverseOrder = true;
-    chart.legend.labels.template.fontSize = 14;
+    chart.legend.labels.template.fontSize = 16;
     chart.legend.labels.template.paddingLeft = 5;
     // Darstellungsform der Legendenicons
     let markerTemplate = chart.legend.markers.template;

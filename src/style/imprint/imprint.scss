@@ -22,7 +22,7 @@
     }
 
     .section__imprint__logo {
-      width: 184px;
+      width: 164px;
 
       display: inline;
     }
@@ -32,13 +32,16 @@
     }
   }
   .section__paragraph__link {
-    color: $text-color-dark;
+    color: #4261c1;
     text-decoration: underline;
     cursor: pointer;
   }
   .section__paragraph__link:hover {
-    color: $text-color-dark;
+    color: #4261c1;
     text-decoration: none;
     cursor: pointer;
   }
+}
+.section__paragraph_imprint {
+  line-height: 1.4;
 }

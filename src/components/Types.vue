@@ -22,7 +22,7 @@
             <span class="section__heading--light">&nbsp;SCS</span>
           </h2>
           <ul class="types__element__list section__dashed-list">
-            <li>Eight different SCSs by Chinese companies e. g. Sesame Credit (Alibaba) and Tencent Credit</li>
+            <li>Eight different SCS by Chinese companies e. g. Sesame Credit (Alibaba) and Tencent Credit</li>
             <li>Tense relationship with regulators as they aim to establish a unified national SCS</li>
             <li>Free decision of partcipation</li>
           </ul>
@@ -85,7 +85,7 @@
             <span class="section__heading--light">&nbsp;SCS</span>
           </h2>
           <ul class="types__element__list section__dashed-list">
-            <li>40 different SCSs by the government & it’s municipals and provinces</li>
+            <li>40 different SCS by the government & it’s municipals and provinces</li>
             <li>Some model cities with more strongly developed SCS e. g. Rongcheng and Weihai</li>
             <li>Mandatory participation</li>
           </ul>

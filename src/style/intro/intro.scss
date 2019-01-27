@@ -16,13 +16,19 @@
 
     .intro__study-info__text {
       padding: 0;
-      font-family: $font-paragraph;
+      font-family: $font-heading-light;
       color: $text-color-dark;
+      line-height: 1.44;
     }
 
     .intro__study-info__text--link {
       text-decoration: underline;
       cursor: pointer;
+      color: #4261c1;
+    }
+
+    .intro__study-info__text--link:hover {
+      color: #4261c1;
     }
   }
 
