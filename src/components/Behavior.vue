@@ -110,7 +110,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 col-12 behavior__text-wrapper">
             <p class="section__paragraph">
-              How ones score is calculated differs between commercial social credit systems.For example, here is the relevant criterea at
+              How ones score is calculated differs between commercial social credit systems. For example, here is the relevant criterea at
               <b>Sesame Credit.</b>
             </p>
           </div>
