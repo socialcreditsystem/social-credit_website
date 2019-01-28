@@ -81,7 +81,7 @@
       </div>
       <h3 class="approval__controls__heading" id="approvalHeading">Overall</h3>
       <div class="row justify-content-end">
-        <div class="col-11 approval__chart" ref="chartdiv"></div>
+        <div class="col-11 approval__chart" id="chartdiv" ref="chartdiv"></div>
       </div>
     </div>
   </section>
@@ -101,6 +101,7 @@ function changeToCategory(id, categoryName) {
 
   document.getElementById(id).style.opacity = 1;
   document.getElementById("approvalHeading").innerText = categoryName;
+  createChart()
 }
 
 /* Imports */
@@ -131,11 +132,142 @@ am4core.useTheme(am4themes_approvalTheme);
 
 let chart;
 
+
+function createChart(){
+    chart = am4core.create("chartdiv", am4charts.XYChart);
+
+    chart.hiddenState.properties.opacity = 1; // this creates initial fade-in
+    
+    chart.colors.step = 1;
+    chart.padding(30, 30, 10, 30);
+    chart.legend = new am4charts.Legend();
+    chart.legend.position = "right";
+    chart.legend.width = am4core.percent(60);
+    chart.legend.labels.template.text = "[#D1D1D1]{name}[/]";
+    chart.legend.itemContainers.template.togglable = false;
+    chart.legend.reverseOrder = true;
+    chart.legend.labels.template.fontSize = 16;
+    chart.legend.labels.template.paddingLeft = 5;
+    // Darstellungsform der Legendenicons
+    let markerTemplate = chart.legend.markers.template;
+    markerTemplate.width = 20;
+    markerTemplate.height = 20;
+
+    let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = "category";
+    categoryAxis.renderer.grid.template.location = 0;
+    categoryAxis.renderer.grid.template.stroke = am4core.color("#fff");
+
+    let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.min = 0;
+    valueAxis.max = 100;
+    valueAxis.strictMinMax = true;
+    valueAxis.calculateTotals = true;
+    valueAxis.renderer.minWidth = 50;
+    valueAxis.renderer.grid.template.stroke = am4core.color("#fff");
+
+    let series1 = chart.series.push(new am4charts.ColumnSeries());
+    series1.columns.template.width = am4core.percent(80);
+    series1.columns.template.tooltipText =
+      "{name}: {valueY.totalPercent.formatNumber('#.00')}%";
+    series1.name = "strongly disapprove";
+    series1.dataFields.categoryX = "category";
+    series1.dataFields.valueY = "stronglyDisapprove";
+    series1.dataFields.valueYShow = "totalPercent";
+    series1.dataItems.template.locations.categoryX = 0.5;
+    series1.stacked = true;
+    series1.tooltip.pointerOrientation = "vertical";
+    series1.defaultState.transitionDuration = 5000;
+    series1.hiddenState.transitionDuration = 5000;
+
+    let bullet1 = series1.bullets.push(new am4charts.LabelBullet());
+    bullet1.label.text = "{valueY.totalPercent.formatNumber('#.00')}%";
+    bullet1.label.fill = am4core.color("#ffffff");
+    bullet1.locationY = 0.5;
+
+    let series2 = chart.series.push(new am4charts.ColumnSeries());
+    series2.columns.template.width = am4core.percent(80);
+    series2.columns.template.tooltipText =
+      "{name}: {valueY.totalPercent.formatNumber('#.00')}%";
+    series2.name = "somewhat disapprove";
+    series2.dataFields.categoryX = "category";
+    series2.dataFields.valueY = "somewhatDisapprove";
+    series2.dataFields.valueYShow = "totalPercent";
+    series2.dataItems.template.locations.categoryX = 0.5;
+    series2.stacked = true;
+    series2.tooltip.pointerOrientation = "vertical";
+    series2.defaultState.transitionDuration = 5000;
+    series2.hiddenState.transitionDuration = 5000;
+
+    let bullet2 = series2.bullets.push(new am4charts.LabelBullet());
+    bullet2.label.text = "{valueY.totalPercent.formatNumber('#.00')}%";
+    bullet2.locationY = 0.5;
+    bullet2.label.fill = am4core.color("#ffffff");
+
+    let series3 = chart.series.push(new am4charts.ColumnSeries());
+    series3.columns.template.width = am4core.percent(80);
+    series3.columns.template.tooltipText =
+      "{name}: {valueY.totalPercent.formatNumber('#.00')}%";
+    series3.name = "neither disapprove nor approve";
+    series3.dataFields.categoryX = "category";
+    series3.dataFields.valueY = "neutral";
+    series3.dataFields.valueYShow = "totalPercent";
+    series3.dataItems.template.locations.categoryX = 0.5;
+    series3.stacked = true;
+    series3.tooltip.pointerOrientation = "vertical";
+    series3.defaultState.transitionDuration = 5000;
+    series3.hiddenState.transitionDuration = 5000;
+
+    let bullet3 = series3.bullets.push(new am4charts.LabelBullet());
+    bullet3.label.text = "{valueY.totalPercent.formatNumber('#.00')}%";
+    bullet3.locationY = 0.5;
+    bullet3.label.fill = am4core.color("#ffffff");
+
+    let series4 = chart.series.push(new am4charts.ColumnSeries());
+    series4.columns.template.width = am4core.percent(80);
+    series4.columns.template.tooltipText =
+      "{name}: {valueY.totalPercent.formatNumber('#.00')}%";
+    series4.name = "somewhat approve";
+    series4.dataFields.categoryX = "category";
+    series4.dataFields.valueY = "somewhatApprove";
+    series4.dataFields.valueYShow = "totalPercent";
+    series4.dataItems.template.locations.categoryX = 0.5;
+    series4.stacked = true;
+    series4.tooltip.pointerOrientation = "vertical";
+    series4.defaultState.transitionDuration = 5000;
+    series4.hiddenState.transitionDuration = 5000;
+
+    let bullet4 = series4.bullets.push(new am4charts.LabelBullet());
+    bullet4.label.text = "{valueY.totalPercent.formatNumber('#.00')}%";
+    bullet4.locationY = 0.5;
+    bullet4.label.fill = am4core.color("#ffffff");
+
+    let series5 = chart.series.push(new am4charts.ColumnSeries());
+    series5.columns.template.width = am4core.percent(80);
+    series5.columns.template.tooltipText =
+      "{name}: {valueY.totalPercent.formatNumber('#.00')}%";
+    series5.name = "strongly  approve";
+    series5.dataFields.categoryX = "category";
+    series5.dataFields.valueY = "stronglyApprove";
+    series5.dataFields.valueYShow = "totalPercent";
+    series5.dataItems.template.locations.categoryX = 0.5;
+    series5.stacked = true;
+    series5.tooltip.pointerOrientation = "vertical";
+    series5.defaultState.transitionDuration = 5000;
+    series5.hiddenState.transitionDuration = 5000;
+
+    let bullet5 = series5.bullets.push(new am4charts.LabelBullet());
+    bullet5.label.text = "{valueY.totalPercent.formatNumber('#.00')}%";
+    bullet5.locationY = 0.5;
+    bullet5.label.fill = am4core.color("#ffffff");
+  }
+
 export default {
   name: "Approval",
   methods: {
     changeToOverall: function() {
       changeToCategory("changeToOverall", "Overall");
+      createChart()
       chart.data = [
         {
           category: "Overall",
@@ -449,5 +581,5 @@ export default {
     bullet5.locationY = 0.5;
     bullet5.label.fill = am4core.color("#ffffff");
   }
-};
+  };
 </script>
