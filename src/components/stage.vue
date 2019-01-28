@@ -10,7 +10,7 @@
           <h6>A visualization by the students Benedikt Asal, Philipp Danne, Selina Groß and David Wostracky of the Online Media course of studies at Baden-Württemberg Cooperative State University Mosbach.</h6>
           <br>
           <a href="#intro">
-            <img alt="white-Arrow" src="../assets/white-arrow-down.svg">
+            <img alt="white-Arrow" class="bounce" src="../assets/white-arrow-down.svg">
           </a>
         </div>
       </div>
